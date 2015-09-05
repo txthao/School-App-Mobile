@@ -1,0 +1,4 @@
+School.Droid.MainActivity, School.Droid;md57f5688a386234212827f14cda194d215.MainActivity
+School.Droid.MainActivity, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.MainActivity
+School.Droid.MainActivity;md57f5688a386234212827f14cda194d215.MainActivity
+school.droid.MainActivity;md57f5688a386234212827f14cda194d215.MainActivity

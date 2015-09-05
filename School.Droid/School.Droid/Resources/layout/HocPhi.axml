@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearHP">
+        <TextView
+            android:text="Học Kỳ 1 năm học 2015-2016"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18"
+            android:id="@+id/txtHocKyHP"
+            android:layout_marginTop="50" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:id="@+id/listHP" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:layout_below="@id/linearHP">
+        <TextView
+            android:text="Tổng số TC"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12"
+            android:id="@+id/txtTSTC"
+            android:layout_marginTop="10" />
+        <TextView
+            android:text="Tổng số Tiền Học Phí"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12"
+            android:id="@+id/txtTSTHP"
+            android:layout_marginTop="10" />
+        <TextView
+            android:text="Số tiền đóng tối thiểu lần đầu "
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12"
+            android:id="@+id/txtTTLD"
+            android:layout_marginTop="10" />
+        <TextView
+            android:text="Tổng số Tiền đã đóng"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12"
+            android:id="@+id/txtTDD"
+            android:layout_marginTop="10" />
+        <TextView
+            android:text="Số tiền còn nợ"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12"
+            android:id="@+id/txtTCN"
+            android:layout_marginTop="10" />
+    </LinearLayout>
+</RelativeLayout>
