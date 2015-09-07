@@ -1,1 +1,2 @@
 /Users/mactien/Projects/School.Droid/School.Droid/obj/Debug/assemblies/School.Droid.dll
+/Users/mactien/Projects/School.Droid/School.Droid/obj/Debug/assemblies/Xamarin.Android.Support.v4.dll

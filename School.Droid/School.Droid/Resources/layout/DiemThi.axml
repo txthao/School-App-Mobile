@@ -15,9 +15,9 @@
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18"
+            android:textSize="25dip"
             android:id="@+id/txtHocKyDT"
-            android:layout_marginTop="50" />
+            android:layout_marginTop="50px" />
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"

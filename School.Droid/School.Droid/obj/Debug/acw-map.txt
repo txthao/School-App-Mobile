@@ -1,4 +1,56 @@
-School.Droid.MainActivity, School.Droid;md57f5688a386234212827f14cda194d215.MainActivity
-School.Droid.MainActivity, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.MainActivity
-School.Droid.MainActivity;md57f5688a386234212827f14cda194d215.MainActivity
-school.droid.MainActivity;md57f5688a386234212827f14cda194d215.MainActivity
+School.Droid.DrawerActivity, School.Droid;md57f5688a386234212827f14cda194d215.DrawerActivity
+School.Droid.DrawerActivity, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.DrawerActivity
+School.Droid.DrawerActivity;md57f5688a386234212827f14cda194d215.DrawerActivity
+school.droid.DrawerActivity;md57f5688a386234212827f14cda194d215.DrawerActivity
+School.Droid.MyActionBarDrawerToggle, School.Droid;md57f5688a386234212827f14cda194d215.MyActionBarDrawerToggle
+School.Droid.MyActionBarDrawerToggle, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.MyActionBarDrawerToggle
+School.Droid.MyActionBarDrawerToggle;md57f5688a386234212827f14cda194d215.MyActionBarDrawerToggle
+school.droid.MyActionBarDrawerToggle;md57f5688a386234212827f14cda194d215.MyActionBarDrawerToggle
+School.Droid.LichThiFragment, School.Droid;md57f5688a386234212827f14cda194d215.LichThiFragment
+School.Droid.LichThiFragment, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.LichThiFragment
+School.Droid.LichThiFragment;md57f5688a386234212827f14cda194d215.LichThiFragment
+school.droid.LichThiFragment;md57f5688a386234212827f14cda194d215.LichThiFragment
+School.Droid.HocPhiFragment, School.Droid;md57f5688a386234212827f14cda194d215.HocPhiFragment
+School.Droid.HocPhiFragment, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.HocPhiFragment
+School.Droid.HocPhiFragment;md57f5688a386234212827f14cda194d215.HocPhiFragment
+school.droid.HocPhiFragment;md57f5688a386234212827f14cda194d215.HocPhiFragment
+School.Droid.LichHocFragment, School.Droid;md57f5688a386234212827f14cda194d215.LichHocFragment
+School.Droid.LichHocFragment, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.LichHocFragment
+School.Droid.LichHocFragment;md57f5688a386234212827f14cda194d215.LichHocFragment
+school.droid.LichHocFragment;md57f5688a386234212827f14cda194d215.LichHocFragment
+School.Droid.DiemThiFragment, School.Droid;md57f5688a386234212827f14cda194d215.DiemThiFragment
+School.Droid.DiemThiFragment, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.DiemThiFragment
+School.Droid.DiemThiFragment;md57f5688a386234212827f14cda194d215.DiemThiFragment
+school.droid.DiemThiFragment;md57f5688a386234212827f14cda194d215.DiemThiFragment
+Android.Support.V4.Content.Loader/IOnLoadCompleteListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.content.Loader_OnLoadCompleteListenerImplementor
+Android.Support.V4.Content.Loader/IOnLoadCompleteListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.content.Loader_OnLoadCompleteListenerImplementor
+Android.Support.V4.Content.Loader.IOnLoadCompleteListenerImplementor;mono.android.support.v4.content.Loader_OnLoadCompleteListenerImplementor
+android.support.v4.content.Loader_IOnLoadCompleteListenerImplementor;mono.android.support.v4.content.Loader_OnLoadCompleteListenerImplementor
+Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
+Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
+Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
+android.support.v4.view.ViewPager_IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
+Android.Support.V4.Widget.DrawerLayout/IDrawerListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.widget.DrawerLayout_DrawerListenerImplementor
+Android.Support.V4.Widget.DrawerLayout/IDrawerListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.DrawerLayout_DrawerListenerImplementor
+Android.Support.V4.Widget.DrawerLayout.IDrawerListenerImplementor;mono.android.support.v4.widget.DrawerLayout_DrawerListenerImplementor
+android.support.v4.widget.DrawerLayout_IDrawerListenerImplementor;mono.android.support.v4.widget.DrawerLayout_DrawerListenerImplementor
+Android.Support.V4.Widget.SlidingPaneLayout/IPanelSlideListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
+Android.Support.V4.Widget.SlidingPaneLayout/IPanelSlideListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
+Android.Support.V4.Widget.SlidingPaneLayout.IPanelSlideListenerImplementor;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
+android.support.v4.widget.SlidingPaneLayout_IPanelSlideListenerImplementor;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
+Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
+Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
+Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
+android.support.v4.app.FragmentManager_IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
+Android.Support.V4.View.ActionProvider/ISubUiVisibilityListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
+Android.Support.V4.View.ActionProvider/ISubUiVisibilityListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
+Android.Support.V4.View.ActionProvider.ISubUiVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
+android.support.v4.view.ActionProvider_ISubUiVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
+Android.Support.V4.View.ActionProvider/IVisibilityListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ActionProvider_VisibilityListenerImplementor
+Android.Support.V4.View.ActionProvider/IVisibilityListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ActionProvider_VisibilityListenerImplementor
+Android.Support.V4.View.ActionProvider.IVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_VisibilityListenerImplementor
+android.support.v4.view.ActionProvider_IVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_VisibilityListenerImplementor
+Android.Support.V4.View.MenuItemCompat/IOnActionExpandListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.MenuItemCompat_OnActionExpandListenerImplementor
+Android.Support.V4.View.MenuItemCompat/IOnActionExpandListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.MenuItemCompat_OnActionExpandListenerImplementor
+Android.Support.V4.View.MenuItemCompat.IOnActionExpandListenerImplementor;mono.android.support.v4.view.MenuItemCompat_OnActionExpandListenerImplementor
+android.support.v4.view.MenuItemCompat_IOnActionExpandListenerImplementor;mono.android.support.v4.view.MenuItemCompat_OnActionExpandListenerImplementor

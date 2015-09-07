@@ -42,11 +42,19 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv4-18-4.18.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DrawerActivity.cs" />
+    <Compile Include="MyActionBarDrawerToggle.cs" />
+    <Compile Include="LichThiFragment.cs" />
+    <Compile Include="HocPhiFragment.cs" />
+    <Compile Include="LichHocFragment.cs" />
+    <Compile Include="DiemThiFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -72,6 +80,24 @@
     <AndroidResource Include="Resources\layout\HocPhiHeader.xml" />
     <AndroidResource Include="Resources\layout\HocPhiRow.xml" />
     <AndroidResource Include="Resources\layout\HocPhi.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\drawer_item.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_other.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_search.png" />
+    <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>4.18.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Menu\" />
+  </ItemGroup>
 </Project>
