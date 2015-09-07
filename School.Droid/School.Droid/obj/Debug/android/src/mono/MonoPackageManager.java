@@ -80,6 +80,7 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"School.Droid.dll",
+		"Xamarin.Android.Support.v4.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

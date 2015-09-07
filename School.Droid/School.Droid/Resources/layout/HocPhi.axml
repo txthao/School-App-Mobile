@@ -16,9 +16,9 @@
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18"
+            android:textSize="25dip"
             android:id="@+id/txtHocKyHP"
-            android:layout_marginTop="50" />
+            android:layout_marginTop="50px" />
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"
@@ -38,40 +38,40 @@
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12"
+            android:textSize="20dip"
             android:id="@+id/txtTSTC"
-            android:layout_marginTop="10" />
+            android:layout_marginTop="10px" />
         <TextView
             android:text="Tổng số Tiền Học Phí"
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12"
+            android:textSize="20dip"
             android:id="@+id/txtTSTHP"
-            android:layout_marginTop="10" />
+            android:layout_marginTop="10px" />
         <TextView
             android:text="Số tiền đóng tối thiểu lần đầu "
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12"
+            android:textSize="20dip"
             android:id="@+id/txtTTLD"
-            android:layout_marginTop="10" />
+            android:layout_marginTop="10px" />
         <TextView
             android:text="Tổng số Tiền đã đóng"
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12"
+            android:textSize="20dip"
             android:id="@+id/txtTDD"
-            android:layout_marginTop="10" />
+            android:layout_marginTop="10px" />
         <TextView
             android:text="Số tiền còn nợ"
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12"
+            android:textSize="20dip"
             android:id="@+id/txtTCN"
-            android:layout_marginTop="10" />
+            android:layout_marginTop="10px" />
     </LinearLayout>
 </RelativeLayout>
