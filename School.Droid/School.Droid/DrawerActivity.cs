@@ -75,6 +75,9 @@ namespace School.Droid
 
 			if (null == savedInstanceState)
 				SelectItem(0);
+
+
+		
 		}
 
 		private void SelectItem(int position)
@@ -129,8 +132,7 @@ namespace School.Droid
 		public override bool OnPrepareOptionsMenu(IMenu menu)
 		{
 			
-			var drawerOpen = _drawer.IsDrawerOpen(Resource.Id.left_drawer);
-
+		
 			return base.OnPrepareOptionsMenu(menu);
 		}
 
