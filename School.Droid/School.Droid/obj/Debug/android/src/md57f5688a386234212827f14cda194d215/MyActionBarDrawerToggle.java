@@ -26,6 +26,14 @@ public class MyActionBarDrawerToggle
 	}
 
 
+	public MyActionBarDrawerToggle (android.app.Activity p0, android.support.v4.widget.DrawerLayout p1, boolean p2, int p3, int p4, int p5) throws java.lang.Throwable
+	{
+		super (p0, p1, p2, p3, p4, p5);
+		if (getClass () == MyActionBarDrawerToggle.class)
+			mono.android.TypeManager.Activate ("School.Droid.MyActionBarDrawerToggle, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.App.Activity, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065:Android.Support.V4.Widget.DrawerLayout, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e:System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e:System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e:System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", this, new java.lang.Object[] { p0, p1, p2, p3, p4, p5 });
+	}
+
+
 	public void onDrawerClosed (android.view.View p0)
 	{
 		n_onDrawerClosed (p0);

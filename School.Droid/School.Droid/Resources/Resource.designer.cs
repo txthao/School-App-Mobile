@@ -122,8 +122,8 @@ namespace School.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080020
-			public const int STT = 2131230752;
+			// aapt resource value: 0x7f080022
+			public const int STT = 2131230754;
 			
 			// aapt resource value: 0x7f080004
 			public const int STTDT = 2131230724;
@@ -131,20 +131,20 @@ namespace School.Droid
 			// aapt resource value: 0x7f080014
 			public const int STTHP = 2131230740;
 			
-			// aapt resource value: 0x7f08001d
-			public const int btDangNhap = 2131230749;
+			// aapt resource value: 0x7f08001f
+			public const int btDangNhap = 2131230751;
 			
-			// aapt resource value: 0x7f080025
-			public const int content_frame = 2131230757;
-			
-			// aapt resource value: 0x7f080024
-			public const int drawer_layout = 2131230756;
+			// aapt resource value: 0x7f080027
+			public const int content_frame = 2131230759;
 			
 			// aapt resource value: 0x7f080026
-			public const int left_drawer = 2131230758;
+			public const int drawer_layout = 2131230758;
 			
-			// aapt resource value: 0x7f08001e
-			public const int linear1 = 2131230750;
+			// aapt resource value: 0x7f080028
+			public const int left_drawer = 2131230760;
+			
+			// aapt resource value: 0x7f080020
+			public const int linear1 = 2131230752;
 			
 			// aapt resource value: 0x7f080012
 			public const int linear10 = 2131230738;
@@ -152,8 +152,8 @@ namespace School.Droid
 			// aapt resource value: 0x7f080002
 			public const int linear11 = 2131230722;
 			
-			// aapt resource value: 0x7f08001f
-			public const int linear2 = 2131230751;
+			// aapt resource value: 0x7f080021
+			public const int linear2 = 2131230753;
 			
 			// aapt resource value: 0x7f080003
 			public const int linear45 = 2131230723;
@@ -171,7 +171,10 @@ namespace School.Droid
 			public const int listHP = 2131230732;
 			
 			// aapt resource value: 0x7f08001a
-			public const int listLT = 2131230746;
+			public const int listLH = 2131230746;
+			
+			// aapt resource value: 0x7f08001c
+			public const int listLT = 2131230748;
 			
 			// aapt resource value: 0x7f080007
 			public const int txtDKT = 2131230727;
@@ -182,8 +185,8 @@ namespace School.Droid
 			// aapt resource value: 0x7f080009
 			public const int txtDTK = 2131230729;
 			
-			// aapt resource value: 0x7f080019
-			public const int txtHocKy = 2131230745;
+			// aapt resource value: 0x7f08001b
+			public const int txtHocKy = 2131230747;
 			
 			// aapt resource value: 0x7f080000
 			public const int txtHocKyDT = 2131230720;
@@ -191,14 +194,17 @@ namespace School.Droid
 			// aapt resource value: 0x7f08000b
 			public const int txtHocKyHP = 2131230731;
 			
+			// aapt resource value: 0x7f080019
+			public const int txtHocKyLH = 2131230745;
+			
 			// aapt resource value: 0x7f080016
 			public const int txtHocPhi = 2131230742;
 			
 			// aapt resource value: 0x7f080017
 			public const int txtMienGiam = 2131230743;
 			
-			// aapt resource value: 0x7f080021
-			public const int txtMonHoc = 2131230753;
+			// aapt resource value: 0x7f080023
+			public const int txtMonHoc = 2131230755;
 			
 			// aapt resource value: 0x7f080005
 			public const int txtMonHocDT = 2131230725;
@@ -209,8 +215,8 @@ namespace School.Droid
 			// aapt resource value: 0x7f080018
 			public const int txtPhaiDong = 2131230744;
 			
-			// aapt resource value: 0x7f080023
-			public const int txtPhongThi = 2131230755;
+			// aapt resource value: 0x7f080025
+			public const int txtPhongThi = 2131230757;
 			
 			// aapt resource value: 0x7f080011
 			public const int txtTCN = 2131230737;
@@ -227,17 +233,17 @@ namespace School.Droid
 			// aapt resource value: 0x7f08000f
 			public const int txtTTLD = 2131230735;
 			
-			// aapt resource value: 0x7f080022
-			public const int txtThoiGian = 2131230754;
+			// aapt resource value: 0x7f080024
+			public const int txtThoiGian = 2131230756;
 			
 			// aapt resource value: 0x7f080006
 			public const int txtTiLe = 2131230726;
 			
-			// aapt resource value: 0x7f08001c
-			public const int txtmk = 2131230748;
+			// aapt resource value: 0x7f08001e
+			public const int txtmk = 2131230750;
 			
-			// aapt resource value: 0x7f08001b
-			public const int txtmsv = 2131230747;
+			// aapt resource value: 0x7f08001d
+			public const int txtmsv = 2131230749;
 			
 			static Id()
 			{
@@ -274,19 +280,28 @@ namespace School.Droid
 			public const int HocPhiRow = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int LichThi = 2130903047;
+			public const int LichHoc = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int LogIn = 2130903048;
+			public const int LichHocHeader = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int LTHeader = 2130903049;
+			public const int LichHocRow = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int LTRow = 2130903050;
+			public const int LichThi = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int Main = 2130903051;
+			public const int LogIn = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int LTHeader = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int LTRow = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int Main = 2130903054;
 			
 			static Layout()
 			{
@@ -329,8 +344,8 @@ namespace School.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f070003
-			public const int Mono_Android_Theme_Splash = 2131165187;
+			// aapt resource value: 0x7f070004
+			public const int Mono_Android_Theme_Splash = 2131165188;
 			
 			// aapt resource value: 0x7f070000
 			public const int MyTheme = 2131165184;
@@ -340,6 +355,9 @@ namespace School.Droid
 			
 			// aapt resource value: 0x7f070001
 			public const int MyTheme_ActionBarStyle = 2131165185;
+			
+			// aapt resource value: 0x7f070003
+			public const int RowHeader = 2131165187;
 			
 			static Style()
 			{
