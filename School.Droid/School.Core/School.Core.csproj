@@ -36,6 +36,18 @@
     <Compile Include="Bussiness\BLichThi.cs" />
     <Compile Include="ISQLite.cs" />
     <Compile Include="Model\MonHoc.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\chiTietLH.cs" />
+    <Compile Include="Model\CTHocPhi.cs" />
+    <Compile Include="Model\DiemMon.cs" />
+    <Compile Include="Model\DiemThi.cs" />
+    <Compile Include="Model\HocPhi.cs" />
+    <Compile Include="Model\LichHoc.cs" />
+    <Compile Include="Bussiness\BLichHoc.cs" />
+    <Compile Include="Bussiness\BDiemThi.cs" />
+    <Compile Include="Bussiness\BUser.cs" />
+    <Compile Include="Bussiness\BMonHoc.cs" />
+    <Compile Include="Bussiness\BHocPhi.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

@@ -29,19 +29,19 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			LichThi lt = new LichThi ();
-			lt.GhepThi = "01";
-			lt.PhongThi = "001";
-			lt.MaMH = "8410";
-			BLichThi.AddLT (lt,SQLite_Android.GetConnection());
+			User lt= new User ();
+			lt.Id = "";
+			lt.Hoten = "Teo";
+
+			int i=BUser.AddUser (SQLite_Android.GetConnection(),lt);
 
 
 			var rootView = inflater.Inflate(Resource.Layout.LichThi, container, false);
 		
-			ListView lv = rootView.FindViewById<ListView> (Resource.Id.listLT);
-			List<LichThi> l = new List<LichThi> ();
 
-			l = BLichThi.getAll (SQLite_Android.GetConnection ());
+			List<User> l = new List<User> ();
+
+			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
 
 
 
