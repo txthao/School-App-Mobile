@@ -14,21 +14,19 @@ namespace School.Core
 {
    public class BLichThi
     {
-       public static List<LichThi> list;
-		public static List<LichThi> getAll(SQLiteConnection connection)
+       public static List<DiemThi> list;
+		public static List<DiemThi> getAll(SQLiteConnection connection)
         {
-            list = new List<LichThi>();
-            
+			list = new List<DiemThi>();
 			DataProvider dtb = new DataProvider (connection);
-			list = dtb.GetAll ();
-            
+			list = dtb.GetAllDT ();
             return list;
         }
 		public static void AddLT(LichThi lt,SQLiteConnection connection )
 		{
 			DataProvider dtb = new DataProvider (connection);
-			if (dtb.Get (lt.MaMH) == null) {
-				dtb.Add (lt);
+			if (dtb.GetLT (lt.MaMH) == null) {
+				dtb.AddLT (lt);
 			}
 		}
 
