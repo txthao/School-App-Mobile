@@ -1,4 +1,8 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile49.AssemblyAttribute.cs
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/School.Core.dll.mdb
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/School.Core.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/obj/Debug/School.Core.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/obj/Debug/School.Core.dll.mdb
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/Xamarin.Forms.Core.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/SQLitePCL.raw.dll
@@ -13,7 +17,3 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Requests.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.NetworkInformation.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Text.RegularExpressions.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/School.Core.dll.mdb
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/School.Core.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/obj/Debug/School.Core.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/obj/Debug/School.Core.dll.mdb

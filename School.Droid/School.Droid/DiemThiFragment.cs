@@ -11,6 +11,8 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using System.Xml;
+using School.Core;
 
 namespace School.Droid
 {
@@ -27,9 +29,15 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
+			BDiemThi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
 			var rootView = inflater.Inflate(Resource.Layout.DiemThi, container, false);
 			return rootView;
+		}
+		private string GetXmlFromSV()
+		{
+			XmlDocument doc = new XmlDocument ();
+			doc.Load ("http://www.schoolapi.somee.com/api/diemthi/3111410094");
+			return doc.InnerXml;
 		}
 	}
 }
