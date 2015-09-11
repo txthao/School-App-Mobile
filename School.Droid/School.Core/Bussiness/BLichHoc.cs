@@ -51,6 +51,58 @@ namespace School.Core
 			DataProvider dtb = new DataProvider (connection);
 			return dtb.GetCTLH (id);
 		}
+
+		public static List<LichHoc> MakeDataFromXml(string xml,SQLiteConnection connection)
+		{
+			list = new List<LichHoc> ();
+			XDocument doc = XDocument.Parse (xml);
+			//get lichthi 
+			IEnumerable<XElement> childList =
+				from el in doc.Root.Elements ()
+				select el;
+			//get attri lichthi
+			int k=GetId( connection);
+			foreach (XElement node in childList) {
+				LichHoc lh = new LichHoc();
+				MonHoc mh = new MonHoc();
+				lh.Id = k.ToString() ;
+
+				lh.MaMH = node.Elements().ElementAt(0).Value.Trim();
+				lh.MaLop = node.Elements().ElementAt(1).Value.Trim();
+				lh.NhomMH = node.Elements().ElementAt(3).Value.Trim();
+				mh.MaMH = lh.MaMH;
+				mh.TenMH = node.Elements().ElementAt(7).Value.Trim();
+				mh.SoTC=int.Parse(node.Elements().ElementAt(5).Value.Trim());
+				mh.TileThi = 0;
+				lh.ThoigianBD = node.Elements().ElementAt(10).Value.Trim().Substring(0, 10);
+				lh.ThoigianKT = node.Elements().ElementAt(10).Value.Trim().Substring(12);
+
+				// constant
+				int one = 1;
+				int five = 5;
+				for (int i = 0; i < node.Elements().ElementAt(8).Value.Trim().Length; i++)
+				{
+					chiTietLH ct = new chiTietLH();
+					ct.Id = k.ToString();
+					ct.CBGD = node.Elements().ElementAt(0).Value.Trim().Substring(i * five, five);
+
+					ct.Phong = node.Elements().ElementAt(4).Value.Trim().Substring(i * 6, 6);
+					ct.Thu =  node.Elements().ElementAt(8).Value.Trim().Substring(i * one, one);
+					ct.TietBatDau = node.Elements().ElementAt(8).Value.Trim().Substring(i * one, one);//tiet bat dau = 10
+
+					ct.SoTiet =node.Elements().ElementAt(6).Value.Trim()[i].ToString();
+					AddCTLH (connection, ct);
+				}
+
+				list.Add(lh);
+				AddLH(lh,connection);
+				BMonHoc.Add(connection,mh);
+				k++;
+			}
+			return list;
+		}
+
+
 	}
 }
 

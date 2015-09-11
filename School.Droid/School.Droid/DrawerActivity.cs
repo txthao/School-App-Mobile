@@ -85,7 +85,7 @@ namespace School.Droid
 			var fragment=new Fragment();
 			switch (position) {
 			case 0:
-				fragment = new LichThiFragment ();
+				fragment = new LichHocFragment ();
 				break;
 			case 1:
 				fragment = new LichThiFragment ();

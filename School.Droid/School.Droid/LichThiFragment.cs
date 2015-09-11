@@ -12,6 +12,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using School.Core;
+using System.Xml;
 
 namespace School.Droid
 {
@@ -29,11 +30,7 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			User lt= new User ();
-			lt.Id = "";
-			lt.Hoten = "Teo";
-
-			int i=BUser.AddUser (SQLite_Android.GetConnection(),lt);
+			BLichThi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
 
 
 			var rootView = inflater.Inflate(Resource.Layout.LichThi, container, false);
@@ -45,9 +42,15 @@ namespace School.Droid
 
 
 
-
-
 			return rootView;
+		}
+
+
+		private string GetXmlFromSV()
+		{
+			XmlDocument doc = new XmlDocument ();
+			doc.Load ("http://www.schoolapi.somee.com/api/lichthi/3112410012");
+			return doc.InnerXml;
 		}
 	}
 }

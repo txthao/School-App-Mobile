@@ -11,7 +11,7 @@ namespace School.Droid
 	{
 		public SQLite_Android () {}
 		public static SQLite.SQLiteConnection GetConnection () {
-			var sqliteFilename = "DBSchool.db3";
+			var sqliteFilename = "DBSchoolV1.db3";
 			string documentsPath = System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal); // Documents folder
 			var path = Path.Combine(documentsPath, sqliteFilename);
 			// Create the connection

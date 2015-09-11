@@ -43,6 +43,60 @@ namespace School.Core
 				DataProvider dtb = new DataProvider (connection);
 				return dtb.GetDMs (hocky, namhoc);
 			}
+			public static List<DiemThi> MakeDataFromXml(string xml,SQLiteConnection connection)
+			{
+				list = new List<DiemThi> ();
+
+			XDocument doc = XDocument.Parse (xml);
+			//get lichthi 
+			IEnumerable<XElement> childList =
+				from el in doc.Root.Elements ()
+				select el;
+			//get attri lichthi
+
+			foreach (XElement node in childList) {
+				DiemThi lt = new DiemThi();
+				lt.DiemRL = node.Elements().ElementAt(0).Value.Trim();
+
+				foreach (XElement nod in node.Elements().ElementAt(5).Elements())
+				{
+					DiemMon dm = new DiemMon();
+					MonHoc mh = new MonHoc();
+					dm.Hocky = int.Parse(node.Elements().ElementAt(9).Value.Trim()[7].ToString());
+					dm.NamHoc = int.Parse(node.Elements().ElementAt(9).Value.Trim().Substring(17));
+					dm.DiemKT = nod.Elements().ElementAt(0).Value.Trim();
+
+					dm.MaMH = nod.Elements().ElementAt(1).Value.Trim();
+					mh.MaMH = dm.MaMH;
+					mh.TenMH = nod.Elements().ElementAt(5).Value.Trim();
+					mh.SoTC = int.Parse(nod.Elements().ElementAt(4).Value.Trim());
+					mh.TileThi = int.Parse( nod.Elements().ElementAt(3).Value.Trim());
+					dm.DiemThi = nod.Elements().ElementAt(6).Value.Trim();
+					dm.DiemTK10 = nod.Elements ().ElementAt (7).Value.Trim ();
+					dm.DiemChu = nod.Elements ().ElementAt (8).Value.Trim ();
+
+					AddDM(dm,connection);
+					BMonHoc.Add (connection, mh);
+
+				}
+				lt.DiemTB4 = node.Elements().ElementAt(1).Value.Trim();
+				lt.DiemTB10 = node.Elements().ElementAt(2).Value.Trim();
+				lt.DiemTBTL4 = node.Elements().ElementAt(3).Value.Trim();
+				lt.DiemTBTL10 = node.Elements().ElementAt(4).Value.Trim();
+				lt.LoaiRL = node.Elements().ElementAt(6).Value.Trim();
+				lt.SoTCDat = node.Elements().ElementAt(7).Value.Trim();
+				lt.SoTCTL = node.Elements().ElementAt(8).Value.Trim();  
+				lt.NamHoc = int.Parse(node.Elements().ElementAt(9).Value.Trim().Substring(17));
+				lt.Hocky = int.Parse(node.Elements().ElementAt(9).Value.Trim()[7].ToString());
+
+				Add(lt,connection);
+				list.Add(lt);
+
+
+			}
+			return list;
+			}
+			
 	}
 }
 
