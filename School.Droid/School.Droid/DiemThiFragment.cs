@@ -29,8 +29,20 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			BDiemThi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
 			var rootView = inflater.Inflate(Resource.Layout.DiemThi, container, false);
+
+			List<DiemThi> list = new List<DiemThi>();
+				list = BDiemThi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+//
+//			List<User> l = new List<User> ();
+//			System.Diagnostics.Debug.WriteLine("size: " + list.Count);
+//			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
+
+
+			var listView = rootView.FindViewById<ExpandableListView>(Resource.Id.listDT);
+			//DiemThiApdater adapter = new DiemThiApdater(Activity, list);
+			listView.SetAdapter (new DiemThiApdater(Activity, list)); 
+
 			return rootView;
 		}
 		private string GetXmlFromSV()

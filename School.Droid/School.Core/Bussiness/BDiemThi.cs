@@ -38,7 +38,7 @@ namespace School.Core
 					}
 				return 0;
 			}
-			public static List<DiemMon> GetDiemMons(SQLiteConnection connection,int namhoc, int hocky)
+            public static List<DiemMon> GetDiemMons(SQLiteConnection connection, int hocky, int namhoc)
 			{
 				DataProvider dtb = new DataProvider (connection);
 				return dtb.GetDMs (hocky, namhoc);
@@ -65,12 +65,12 @@ namespace School.Core
 					dm.Hocky = int.Parse(node.Elements().ElementAt(9).Value.Trim()[7].ToString());
 					dm.NamHoc = int.Parse(node.Elements().ElementAt(9).Value.Trim().Substring(17));
 					dm.DiemKT = nod.Elements().ElementAt(0).Value.Trim();
-
+					// change TIle & also happened in BlichHOc
 					dm.MaMH = nod.Elements().ElementAt(1).Value.Trim();
 					mh.MaMH = dm.MaMH;
 					mh.TenMH = nod.Elements().ElementAt(5).Value.Trim();
 					mh.SoTC = int.Parse(nod.Elements().ElementAt(4).Value.Trim());
-					mh.TileThi = int.Parse( nod.Elements().ElementAt(3).Value.Trim());
+					mh.TiLe = nod.Elements().ElementAt(3).Value.Trim();
 					dm.DiemThi = nod.Elements().ElementAt(6).Value.Trim();
 					dm.DiemTK10 = nod.Elements ().ElementAt (7).Value.Trim ();
 					dm.DiemChu = nod.Elements ().ElementAt (8).Value.Trim ();

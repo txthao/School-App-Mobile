@@ -73,7 +73,7 @@ namespace School.Core
 				mh.MaMH = lh.MaMH;
 				mh.TenMH = node.Elements().ElementAt(7).Value.Trim();
 				mh.SoTC=int.Parse(node.Elements().ElementAt(5).Value.Trim());
-				mh.TileThi = 0;
+				mh.TiLe = "test";
 				lh.ThoigianBD = node.Elements().ElementAt(10).Value.Trim().Substring(0, 10);
 				lh.ThoigianKT = node.Elements().ElementAt(10).Value.Trim().Substring(12);
 

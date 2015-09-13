@@ -30,47 +30,51 @@ public final class R {
         public static final int sguicon=0x7f020009;
     }
     public static final class id {
-        public static final int STT=0x7f080022;
-        public static final int STTDT=0x7f080004;
-        public static final int STTHP=0x7f080014;
-        public static final int btDangNhap=0x7f08001f;
-        public static final int content_frame=0x7f080027;
-        public static final int drawer_layout=0x7f080026;
-        public static final int left_drawer=0x7f080028;
-        public static final int linear1=0x7f080020;
-        public static final int linear10=0x7f080012;
-        public static final int linear11=0x7f080002;
-        public static final int linear2=0x7f080021;
-        public static final int linear45=0x7f080003;
-        public static final int linear6=0x7f080013;
-        public static final int linearHP=0x7f08000a;
-        public static final int listDT=0x7f080001;
-        public static final int listHP=0x7f08000c;
-        public static final int listLH=0x7f08001a;
-        public static final int listLT=0x7f08001c;
-        public static final int txtDKT=0x7f080007;
-        public static final int txtDT=0x7f080008;
-        public static final int txtDTK=0x7f080009;
-        public static final int txtHocKy=0x7f08001b;
+        public static final int STTHP=0x7f080016;
+        public static final int btDangNhap=0x7f080022;
+        public static final int content_frame=0x7f08002b;
+        public static final int drawer_layout=0x7f08002a;
+        public static final int left_drawer=0x7f08002c;
+        public static final int linear1=0x7f08001e;
+        public static final int linear10=0x7f080014;
+        public static final int linear11=0x7f080001;
+        public static final int linear2=0x7f080023;
+        public static final int linear45=0x7f080005;
+        public static final int linear6=0x7f080015;
+        public static final int linearHP=0x7f08000c;
+        public static final int linearTime=0x7f080026;
+        public static final int listDT=0x7f080002;
+        public static final int listHP=0x7f08000e;
+        public static final int listLH=0x7f08001c;
+        public static final int listLT=0x7f08001f;
+        public static final int txtDKT=0x7f080009;
+        public static final int txtDT=0x7f08000a;
+        public static final int txtDTK=0x7f08000b;
+        public static final int txtGioBD=0x7f080028;
+        public static final int txtHeaderDT=0x7f080003;
+        public static final int txtHocKy=0x7f08001d;
         public static final int txtHocKyDT=0x7f080000;
-        public static final int txtHocKyHP=0x7f08000b;
-        public static final int txtHocKyLH=0x7f080019;
-        public static final int txtHocPhi=0x7f080016;
-        public static final int txtMienGiam=0x7f080017;
-        public static final int txtMonHoc=0x7f080023;
-        public static final int txtMonHocDT=0x7f080005;
-        public static final int txtMonHocHP=0x7f080015;
-        public static final int txtPhaiDong=0x7f080018;
-        public static final int txtPhongThi=0x7f080025;
-        public static final int txtTCN=0x7f080011;
-        public static final int txtTDD=0x7f080010;
-        public static final int txtTSTC=0x7f08000d;
-        public static final int txtTSTHP=0x7f08000e;
-        public static final int txtTTLD=0x7f08000f;
-        public static final int txtThoiGian=0x7f080024;
-        public static final int txtTiLe=0x7f080006;
-        public static final int txtmk=0x7f08001e;
-        public static final int txtmsv=0x7f08001d;
+        public static final int txtHocKyHP=0x7f08000d;
+        public static final int txtHocKyLH=0x7f08001b;
+        public static final int txtHocPhi=0x7f080018;
+        public static final int txtMienGiam=0x7f080019;
+        public static final int txtMonHoc=0x7f080025;
+        public static final int txtMonHocDT=0x7f080007;
+        public static final int txtMonHocHP=0x7f080017;
+        public static final int txtPhaiDong=0x7f08001a;
+        public static final int txtPhongThi=0x7f080029;
+        public static final int txtSTT=0x7f080024;
+        public static final int txtSTTDT=0x7f080006;
+        public static final int txtTB10=0x7f080004;
+        public static final int txtTCN=0x7f080013;
+        public static final int txtTDD=0x7f080012;
+        public static final int txtTSTC=0x7f08000f;
+        public static final int txtTSTHP=0x7f080010;
+        public static final int txtTTLD=0x7f080011;
+        public static final int txtThoiGian=0x7f080027;
+        public static final int txtTiLe=0x7f080008;
+        public static final int txtmk=0x7f080021;
+        public static final int txtmsv=0x7f080020;
     }
     public static final class layout {
         public static final int diemthi=0x7f030000;
@@ -97,10 +101,11 @@ public final class R {
         public static final int hello=0x7f040000;
     }
     public static final class style {
-        public static final int Mono_Android_Theme_Splash=0x7f070004;
+        public static final int Mono_Android_Theme_Splash=0x7f070005;
         public static final int MyTheme=0x7f070000;
         public static final int MyTheme_ActionBar_TitleTextStyle=0x7f070002;
         public static final int MyTheme_ActionBarStyle=0x7f070001;
+        public static final int Row=0x7f070004;
         public static final int RowHeader=0x7f070003;
     }
 }

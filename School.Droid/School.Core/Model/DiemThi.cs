@@ -80,7 +80,6 @@ namespace School.Core
             get { return loaiRL; }
             set { loaiRL = value; }
         }
-        
 
     }
 }

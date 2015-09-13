@@ -30,27 +30,28 @@ public final class R {
         public static int sguicon=0x7f020009;
     }
     public static final class id {
-        public static int STT=0x7f080022;
         public static int STTDT=0x7f080004;
         public static int STTHP=0x7f080014;
-        public static int btDangNhap=0x7f08001f;
-        public static int content_frame=0x7f080027;
-        public static int drawer_layout=0x7f080026;
-        public static int left_drawer=0x7f080028;
-        public static int linear1=0x7f080020;
+        public static int btDangNhap=0x7f080020;
+        public static int content_frame=0x7f080029;
+        public static int drawer_layout=0x7f080028;
+        public static int left_drawer=0x7f08002a;
+        public static int linear1=0x7f08001c;
         public static int linear10=0x7f080012;
-        public static int linear11=0x7f080002;
+        public static int linear11=0x7f080001;
         public static int linear2=0x7f080021;
         public static int linear45=0x7f080003;
         public static int linear6=0x7f080013;
         public static int linearHP=0x7f08000a;
-        public static int listDT=0x7f080001;
+        public static int linearTime=0x7f080024;
+        public static int listDT=0x7f080002;
         public static int listHP=0x7f08000c;
         public static int listLH=0x7f08001a;
-        public static int listLT=0x7f08001c;
+        public static int listLT=0x7f08001d;
         public static int txtDKT=0x7f080007;
         public static int txtDT=0x7f080008;
         public static int txtDTK=0x7f080009;
+        public static int txtGioBD=0x7f080026;
         public static int txtHocKy=0x7f08001b;
         public static int txtHocKyDT=0x7f080000;
         public static int txtHocKyHP=0x7f08000b;
@@ -61,16 +62,17 @@ public final class R {
         public static int txtMonHocDT=0x7f080005;
         public static int txtMonHocHP=0x7f080015;
         public static int txtPhaiDong=0x7f080018;
-        public static int txtPhongThi=0x7f080025;
+        public static int txtPhongThi=0x7f080027;
+        public static int txtSTT=0x7f080022;
         public static int txtTCN=0x7f080011;
         public static int txtTDD=0x7f080010;
         public static int txtTSTC=0x7f08000d;
         public static int txtTSTHP=0x7f08000e;
         public static int txtTTLD=0x7f08000f;
-        public static int txtThoiGian=0x7f080024;
+        public static int txtThoiGian=0x7f080025;
         public static int txtTiLe=0x7f080006;
-        public static int txtmk=0x7f08001e;
-        public static int txtmsv=0x7f08001d;
+        public static int txtmk=0x7f08001f;
+        public static int txtmsv=0x7f08001e;
     }
     public static final class layout {
         public static int diemthi=0x7f030000;

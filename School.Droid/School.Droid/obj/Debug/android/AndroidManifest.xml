@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.school">
-  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="19" />
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="16" />
   <application android:label="School" android:theme="@style/MyTheme" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:label="School App" android:name="md57f5688a386234212827f14cda194d215.DrawerActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.school.mono.MonoRuntimeProvider.__mono_init__" />
