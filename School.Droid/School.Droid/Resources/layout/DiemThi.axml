@@ -29,15 +29,6 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:text="#"
-                android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                style="@style/RowHeader" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="0.4"
                 android:text="Môn Học"
                 android:gravity="center"
@@ -47,7 +38,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.12"
+                android:layout_weight="0.15"
                 android:text="Tỉ lệ"
                 android:gravity="center"
                 android:paddingTop="5dp"
@@ -56,7 +47,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.11"
+                android:layout_weight="0.15"
                 android:text="Điểm KT"
                 android:gravity="center"
                 android:paddingTop="5dp"
@@ -65,7 +56,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.12"
+                android:layout_weight="0.15"
                 android:text="Điểm Thi"
                 android:gravity="center"
                 android:paddingTop="5dp"

@@ -11,6 +11,12 @@ namespace School.Droid
 			}
 			return text;
 		}
+
+		public static string calPercent(int tiLe){
+
+
+			return (100-tiLe).ToString()+"/"+tiLe;
+		}
 	}
 }
 

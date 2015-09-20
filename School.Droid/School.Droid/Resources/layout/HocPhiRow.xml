@@ -4,31 +4,37 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal"
-    android:paddingBottom="6dip"
-    android:paddingTop="4dip">
-    <TextView
-        android:id="@+id/STTHP"
-        android:layout_width="90dip"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+    android:weightSum="1">
     <TextView
         android:id="@+id/txtMonHocHP"
-        android:layout_width="90dip"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
     <TextView
         android:id="@+id/txtHocPhi"
-        android:layout_width="90dip"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
     <TextView
         android:id="@+id/txtMienGiam"
-        android:layout_width="90dip"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
     <TextView
         android:id="@+id/txtPhaiDong"
-        android:layout_width="90dip"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
 </LinearLayout>

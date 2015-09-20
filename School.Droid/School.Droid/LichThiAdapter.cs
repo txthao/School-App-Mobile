@@ -52,9 +52,6 @@ namespace School.Droid
 
             }
 
-            TextView txtSTT = view.FindViewById<TextView>(Resource.Id.txtSTT);
-            
-            txtSTT.Text = (position+1).ToString();
             TextView txtMon = view.FindViewById<TextView>(Resource.Id.txtMonHoc);
             txtMon.Text = BMonHoc.GetMH(SQLite_Android.GetConnection(), list[position].MaMH).TenMH;
             TextView txtThoiGian = view.FindViewById<TextView>(Resource.Id.txtThoiGian);

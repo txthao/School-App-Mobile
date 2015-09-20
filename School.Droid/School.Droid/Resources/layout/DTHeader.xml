@@ -4,23 +4,23 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal"
-    android:paddingBottom="6dip"
-    android:paddingTop="4dip">
+    android:layout_margin="10px"
+    android:background="#99CCFF">
     <TextView
         android:id="@+id/txtHeaderDT"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="16dip"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_blue_light" />
-    <TextView
+        android:textColor="#FFFFFF" />
+<!--     <TextView
         android:id="@+id/txtTB10"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="16dip"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_light" />
-<!--    <TextView
+   <TextView
         android:id="@+id/txtTB4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

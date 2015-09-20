@@ -77,7 +77,7 @@ namespace School.Core
 				ct.HocKy = hp.HocKy;
 				ct.NamHoc = hp.NamHoc;
 
-				ct.MaMH = node1.Elements().ElementAt(4).Elements().ElementAt(1).Value.Trim();;
+				ct.MaMH = node1.Elements().ElementAt(4).Elements().ElementAt(0).Value.Trim();;
 				AddCTHP (connection, ct);
 			}
 			AddHP(connection,hp);

@@ -1,4 +1,11 @@
-<LinearLayout android:id="@+id/linear11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:paddingBottom="6dip" android:paddingTop="4dip" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:id="@+id/txtHeaderDT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="16dip" android:textStyle="bold" android:textColor="@android:color/holo_blue_light" /><TextView android:id="@+id/txtTB10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="16dip" android:textStyle="bold" android:textColor="@android:color/holo_blue_light" /><!--    <TextView
+<LinearLayout android:id="@+id/linear11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:layout_margin="10px" android:background="#99CCFF" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:id="@+id/txtHeaderDT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="16dip" android:textStyle="bold" android:textColor="#FFFFFF" /><!--     <TextView
+        android:id="@+id/txtTB10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light" />
+   <TextView
         android:id="@+id/txtTB4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

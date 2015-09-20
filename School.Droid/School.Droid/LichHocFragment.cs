@@ -29,8 +29,28 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			BLichHoc.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
-			var rootView = inflater.Inflate(Resource.Layout.LichThi, container, false);
+		
+//  Lich hoc theo HK
+			var rootView = inflater.Inflate(Resource.Layout.LichHoc, container, false);
+			ListView listView = rootView.FindViewById<ListView>(Resource.Id.listLH);
+
+			List<LichHoc> listLH = BLichHoc.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+			List<chiTietLH> listCT = new List<chiTietLH> ();
+			foreach (var item in listLH) {
+				listCT.AddRange(BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id));
+
+			}
+			LichHocHKAdapter adapter = new LichHocHKAdapter (Activity, listCT);
+			listView.Adapter  = adapter;
+
+//
+//			var rootView = inflater.Inflate(Resource.Layout.LichHocHeader, container, false);
+//			List<LichHoc> listLH = BLichHoc.GetAll(SQLite_Android.GetConnection ());
+//			List<chiTietLH> listCT = new List<chiTietLH> ();
+//			foreach (var item in listLH) {
+//				listCT.Add(BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id).First());
+//			}
+
 			return rootView;
 		}
 		private string GetXmlFromSV()

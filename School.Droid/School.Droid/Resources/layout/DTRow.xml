@@ -8,14 +8,6 @@
     android:layout_marginTop="20px"
     style="@style/Row">
     <TextView
-        android:id="@+id/txtSTTDT"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:gravity="center"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp" />
-    <TextView
         android:id="@+id/txtMonHocDT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -35,7 +27,7 @@
         android:id="@+id/txtDKT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_weight="0.15"
         android:gravity="center"
         android:paddingTop="5dp"
         android:paddingBottom="5dp" />
@@ -43,7 +35,7 @@
         android:id="@+id/txtDT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_weight="0.15"
         android:gravity="center"
         android:paddingTop="5dp"
         android:paddingBottom="5dp" />

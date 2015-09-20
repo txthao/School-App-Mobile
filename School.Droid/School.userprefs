@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="School.Droid\School.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.avd1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="School.Core\Data\DataProvider.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="School.Droid\DiemThiFragment.cs" Line="46" Column="20" />
-      <File FileName="School.Droid\DiemThiApdater.cs" Line="23" Column="4" />
-      <File FileName="School.Droid\Resources\values\styles.xml" Line="16" Column="27" />
-      <File FileName="School.Droid\Common.cs" Line="7" Column="17" />
-      <File FileName="School.Droid\DrawerActivity.cs" Line="86" Column="13" />
-      <File FileName="School.Core\Data\DataProvider.cs" Line="23" Column="30" />
+      <File FileName="School.Droid\HocPhiFragment.cs" Line="50" Column="27" />
+      <File FileName="School.Droid\SQLite_Android.cs" Line="22" Column="2" />
+      <File FileName="School.Droid\HocPhiAdapter.cs" Line="53" Column="90" />
+      <File FileName="School.Core\Data\DataProvider.cs" Line="33" Column="25" />
+      <File FileName="School.Core\Bussiness\BHocPhi.cs" Line="81" Column="30" />
+      <File FileName="g:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\DiemThiApdater.cs" Line="57" Column="30" />
+      <File FileName="School.Droid\Resources\values\styles.xml" Line="19" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

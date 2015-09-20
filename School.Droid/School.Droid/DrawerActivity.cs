@@ -100,7 +100,6 @@ namespace School.Droid
                 fragment = new LichThiFragment ();
                 break;
             }
-			//fragment = new DiemThiFragment ();
 
 			FragmentManager.BeginTransaction()
 				.Replace(Resource.Id.content_frame, fragment)

@@ -70,7 +70,7 @@ namespace School.Core
 					mh.MaMH = dm.MaMH;
 					mh.TenMH = nod.Elements().ElementAt(5).Value.Trim();
 					mh.SoTC = int.Parse(nod.Elements().ElementAt(4).Value.Trim());
-					mh.TiLe = nod.Elements().ElementAt(3).Value.Trim();
+					mh.TiLeThi = int.Parse(nod.Elements().ElementAt(3).Value.Trim());
 					dm.DiemThi = nod.Elements().ElementAt(6).Value.Trim();
 					dm.DiemTK10 = nod.Elements ().ElementAt (7).Value.Trim ();
 					dm.DiemChu = nod.Elements ().ElementAt (8).Value.Trim ();

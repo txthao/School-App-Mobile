@@ -33,15 +33,6 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:text="#"
-                style="@style/RowHeader"
-                android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="0.4"
                 android:text="Môn Thi"
                 style="@style/RowHeader"
@@ -60,7 +51,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.25"
+                android:layout_weight="0.3"
                 android:text="Phòng Thi"
                 style="@style/RowHeader"
                 android:gravity="center"

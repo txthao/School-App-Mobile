@@ -19,7 +19,7 @@ namespace School.Droid
 		public List<DiemThi> listDT;
 		private Context context;
 
-		public DiemThiApdater (Context context,List<DiemThi> listDT)
+		public DiemThiApdater (Context context, List<DiemThi> listDT)
 		{
 			this.context = context;
 			this.listDT = listDT;
@@ -32,17 +32,12 @@ namespace School.Droid
 			
 			View header = convertView;
 			if (header == null) {
-				header = LayoutInflater.From(context).Inflate(Resource.Layout.DTHeader, null);
+				header = LayoutInflater.From (context).Inflate (Resource.Layout.DTHeader, null);
 			}
-			TextView title = header.FindViewById<TextView>(Resource.Id.txtHeaderDT);
-			title.Text = " HỌC KỲ " + listDT[groupPosition].Hocky + " NĂM HỌC " + listDT[groupPosition].NamHoc;
-//			header.FindViewById<TextView>(Resource.Id.txtTB10).Text ="aaa" +listDT [groupPosition].DiemTB10;
-//			header.FindViewById<TextView>(Resource.Id.txtTB4).Text = listDT [groupPosition].DiemTB4;
-//			header.FindViewById<TextView>(Resource.Id.txtTBTL10).Text = listDT [groupPosition].DiemTBTL10;
-//			header.FindViewById<TextView>(Resource.Id.txtTBTL4).Text = listDT [groupPosition].DiemTBTL4;
-//			header.FindViewById<TextView>(Resource.Id.txtDRL).Text = listDT [groupPosition].DiemRL;
-			ExpandableListView mExpandableListView = (ExpandableListView) parent;
-			mExpandableListView.ExpandGroup(groupPosition);
+			TextView title = header.FindViewById<TextView> (Resource.Id.txtHeaderDT);
+			title.Text = " HỌC KỲ " + listDT [groupPosition].Hocky + " NĂM HỌC " + listDT [groupPosition].NamHoc;
+			ExpandableListView mExpandableListView = (ExpandableListView)parent;
+			mExpandableListView.ExpandGroup (groupPosition);
 
 			return header;
 		}
@@ -51,26 +46,39 @@ namespace School.Droid
 		{
 
 			View row = convertView;
+
 			if (row == null) {
-				row = LayoutInflater.From(context).Inflate(Resource.Layout.DTRow, null);
+				row = LayoutInflater.From (context).Inflate (Resource.Layout.DTRow, null);
+			}
+			if (childPosition < GetChildrenCount (groupPosition) - 1) {	
+				
+				DiemMon diemMon = GetChildViewHelper (groupPosition, childPosition);
+				MonHoc mh = BMonHoc.GetMH (SQLite_Android.GetConnection (), diemMon.MaMH);
+				row.FindViewById<TextView> (Resource.Id.txtMonHocDT).Text = mh.TenMH;
+				row.FindViewById<TextView> (Resource.Id.txtTiLe).Text = Common.calPercent (mh.TiLeThi);
+				row.FindViewById<TextView> (Resource.Id.txtDKT).Text = Common.checkSpaceValue (diemMon.DiemKT);
+				row.FindViewById<TextView> (Resource.Id.txtDT).Text = Common.checkSpaceValue (diemMon.DiemThi);
+				row.FindViewById<TextView> (Resource.Id.txtDTK).Text = setDiemTK (diemMon.DiemTK10, diemMon.DiemChu);
+			}
+			else if(childPosition == GetChildrenCount(groupPosition)-1 && listDT [groupPosition].Hocky != 3)
+			{
+				System.Diagnostics.Debug.WriteLine ("footer: " + groupPosition);
+				row = LayoutInflater.From(context).Inflate(Resource.Layout.DTFooter, null);
+				row.FindViewById<TextView>(Resource.Id.txtTB10).Text = "ĐTB Học kỳ hệ 10: " + listDT [groupPosition].DiemTB10;
+				row.FindViewById<TextView>(Resource.Id.txtTB4).Text = "ĐTB Học kỳ hệ 4: " + listDT [groupPosition].DiemTB4;
+				row.FindViewById<TextView>(Resource.Id.txtTBTL10).Text = "ĐTB Tích lũy hệ 10: " + listDT [groupPosition].DiemTBTL10;
+				row.FindViewById<TextView>(Resource.Id.txtTBTL4).Text = "ĐTB Tích lũy hệ 4: " + listDT [groupPosition].DiemTBTL4;
+				row.FindViewById<TextView>(Resource.Id.txtDRL).Text =  "Điểm rèn luyện: " + listDT [groupPosition].DiemRL;
 			}
 
-			DiemMon diemMon = GetChildViewHelper (groupPosition, childPosition);
 
-			//row.FindViewById<TextView> (Resource.Id.txtSTTDT).Text= ;
-			MonHoc mh = BMonHoc.GetMH (SQLite_Android.GetConnection (), diemMon.MaMH);
-			row.FindViewById<TextView> (Resource.Id.txtMonHocDT).Text = mh.TenMH;
-			row.FindViewById<TextView> (Resource.Id.txtTiLe).Text = "50/50";//mh.TiLe not done yet
-			row.FindViewById<TextView> (Resource.Id.txtDKT).Text = Common.checkSpaceValue(diemMon.DiemKT);
-			row.FindViewById<TextView> (Resource.Id.txtDT).Text = Common.checkSpaceValue(diemMon.DiemThi);
-			row.FindViewById<TextView> (Resource.Id.txtDTK).Text = diemMon.DiemTK10 + "(" + diemMon.DiemChu+")";
-				
 
 			return row;
 		}
 
-		public String setDiemTK(string diem10, string diemChu){
-			if (@diem10.Equals ("&nbsp;") && @diemChu.Equals ("&nbsp;")) {
+		public String setDiemTK (string diem10, string diemChu)
+		{
+			if (!diem10.Equals ("&nbsp;") && !diemChu.Equals ("&nbsp;")) {
 				return diem10 + "(" + diemChu + ")";		
 			}
 			return "";
@@ -80,8 +88,8 @@ namespace School.Droid
 		public override int GetChildrenCount (int groupPosition)
 		{
 			
-			List<DiemMon> listDM = BDiemThi.GetDiemMons(SQLite_Android.GetConnection(), listDT[groupPosition].Hocky, listDT[groupPosition].NamHoc);
-			return listDM.Count;
+			List<DiemMon> listDM = BDiemThi.GetDiemMons (SQLite_Android.GetConnection (), listDT [groupPosition].Hocky, listDT [groupPosition].NamHoc);
+			return listDM.Count + 1;
 		}
 
 		public override int GroupCount {
@@ -93,7 +101,7 @@ namespace School.Droid
 		private DiemMon GetChildViewHelper (int groupPosition, int childPosition)
 		{
 			
-			List<DiemMon> listDM = BDiemThi.GetDiemMons(SQLite_Android.GetConnection(), listDT[groupPosition].Hocky, listDT[groupPosition].NamHoc);
+			List<DiemMon> listDM = BDiemThi.GetDiemMons (SQLite_Android.GetConnection (), listDT [groupPosition].Hocky, listDT [groupPosition].NamHoc);
 			return listDM [childPosition];
 
 		}

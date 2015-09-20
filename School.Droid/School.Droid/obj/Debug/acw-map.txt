@@ -30,6 +30,14 @@ School.Droid.DiemThiFragment, School.Droid;md57f5688a386234212827f14cda194d215.D
 School.Droid.DiemThiFragment, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.DiemThiFragment
 School.Droid.DiemThiFragment;md57f5688a386234212827f14cda194d215.DiemThiFragment
 school.droid.DiemThiFragment;md57f5688a386234212827f14cda194d215.DiemThiFragment
+School.Droid.HocPhiAdapter, School.Droid;md57f5688a386234212827f14cda194d215.HocPhiAdapter
+School.Droid.HocPhiAdapter, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.HocPhiAdapter
+School.Droid.HocPhiAdapter;md57f5688a386234212827f14cda194d215.HocPhiAdapter
+school.droid.HocPhiAdapter;md57f5688a386234212827f14cda194d215.HocPhiAdapter
+School.Droid.LichHocHKAdapter, School.Droid;md57f5688a386234212827f14cda194d215.LichHocHKAdapter
+School.Droid.LichHocHKAdapter, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.LichHocHKAdapter
+School.Droid.LichHocHKAdapter;md57f5688a386234212827f14cda194d215.LichHocHKAdapter
+school.droid.LichHocHKAdapter;md57f5688a386234212827f14cda194d215.LichHocHKAdapter
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor

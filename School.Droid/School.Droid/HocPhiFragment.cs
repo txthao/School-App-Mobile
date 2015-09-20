@@ -29,14 +29,28 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			BHocPhi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+
 			var rootView = inflater.Inflate(Resource.Layout.HocPhi, container, false);
+
+
+			HocPhi hp = BHocPhi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+			List<CTHocPhi> listCT = BHocPhi.GetCTHP (SQLite_Android.GetConnection (), hp.NamHoc, hp.HocKy);
+			ListView listView = rootView.FindViewById<ListView>(Resource.Id.listHP);
+			HocPhiAdapter adapter = new HocPhiAdapter(Activity, listCT);
+
+			listView.Adapter = adapter;
+			rootView.FindViewById<TextView> (Resource.Id.txtTSTC).Text += hp.TongSoTC;
+			rootView.FindViewById<TextView> (Resource.Id.txtTSTHP).Text += hp.TongSoTien;
+			rootView.FindViewById<TextView> (Resource.Id.txtTTLD).Text += hp.TienDongTTLD;
+			rootView.FindViewById<TextView> (Resource.Id.txtTDD).Text += hp.TienDaDong;
+			rootView.FindViewById<TextView> (Resource.Id.txtTCN).Text += hp.TienConNo;
+
 			return rootView;
 		}
 		private string GetXmlFromSV()
 		{
 			XmlDocument doc = new XmlDocument ();
-			doc.Load ("http://www.schoolapi.somee.com/api/hocphi/3111410094");
+			doc.Load ("http://www.schoolapi.somee.com/api/hocphi/3111410089/secret01");
 			return doc.InnerXml;
 		}
 	}

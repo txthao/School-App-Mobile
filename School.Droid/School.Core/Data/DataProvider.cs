@@ -31,7 +31,6 @@ namespace School.Core
 		{
 			_connection.Insert(T);
 			_connection.Commit();
-			_connection.Close ();
 
 		}
 		public List<LichThi> GetAllLT()
@@ -77,7 +76,16 @@ namespace School.Core
 
 			return query.FirstOrDefault ();
 		}
-		public LichHoc GetLH(string mamh)
+
+		public LichHoc GetLH_Id(string id)
+		{
+			var query = from c in _connection.Table<LichHoc>()
+					where c.Id.Equals(id)
+				select c;
+
+			return query.FirstOrDefault ();
+		}
+		public LichHoc GetLH_Ma(string mamh)
 		{
 			var query = from c in _connection.Table<LichHoc>()
 					where c.MaMH.Equals(mamh)
@@ -128,7 +136,15 @@ namespace School.Core
 			return query.ToList();
 		}
 
-		public List<CTHocPhi> GetCTHPs(int hocky,int namhoc)
+		public chiTietLH checkCTLH(chiTietLH ct)
+		{
+			var query = from c in _connection.Table<chiTietLH>()
+					where c.Id.Equals(ct.Id) && c.Thu.Equals(ct.Thu) && c.Phong.Equals(ct.Phong)
+				select c;
+			return query.FirstOrDefault();
+		}
+
+		public List<CTHocPhi> GetCTHPs(int namhoc,int hocky)
 		{
 			var query = from c in _connection.Table<CTHocPhi>()
 					where (c.HocKy==hocky)&&(c.NamHoc==namhoc)
@@ -167,12 +183,12 @@ namespace School.Core
 
 			return query.FirstOrDefault ();
 		}
-		public List<CTHocPhi> GetCTHP(int namhoc, int hocky)
+		public CTHocPhi GetCTHP(int namhoc, int hocky)
 		{
 			var query = from c in _connection.Table<CTHocPhi>()
 					where (c.HocKy==hocky)&&(c.NamHoc==namhoc)
 				select c;
-			return query.ToList();
+			return query.FirstOrDefault ();
 		}
 		public int AddDM(DiemMon T)
 		{
