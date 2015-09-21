@@ -14,7 +14,7 @@ using School.Core;
 
 namespace School.Droid
 {
-	[Activity (Label = "LoginActivity", MainLauncher = true)]			
+	[Activity (Label = "LoginActivity")]			
 	public class LoginActivity : Activity
 	{
 		Button btnLogin;

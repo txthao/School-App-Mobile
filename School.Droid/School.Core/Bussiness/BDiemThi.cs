@@ -46,7 +46,7 @@ namespace School.Core
 				DataProvider dtb = new DataProvider (connection);
 				return dtb.GetDMs (hocky, namhoc);
 			}
-		public static async Task<List<DiemThi>> MakeDataFromXml(SQLiteConnection connection)
+		public static async  Task<List<DiemThi>> MakeDataFromXml(SQLiteConnection connection)
 			{
 				list = new List<DiemThi> ();
 

@@ -11,7 +11,7 @@
         <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.school" />
       </intent-filter>
     </receiver>
-    <activity android:label="LoginActivity" android:name="com.companyname.school.TrialSplashScreen" android:theme="@style/Mono.Android.Theme.Splash" android:noHistory="true">
+    <activity android:label="School App" android:name="com.companyname.school.TrialSplashScreen" android:theme="@style/Mono.Android.Theme.Splash" android:noHistory="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

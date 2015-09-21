@@ -7,6 +7,9 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/SQLitePCL.raw.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/SQLite-net.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.Primitives.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.Extensions.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/mscorlib.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Core.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.dll
@@ -17,6 +20,3 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Requests.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.NetworkInformation.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Text.RegularExpressions.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.Primitives.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.Extensions.dll

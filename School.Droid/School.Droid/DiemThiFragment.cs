@@ -29,8 +29,9 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+
 			var rootView = inflater.Inflate(Resource.Layout.DiemThi, container, false);
-			BDiemThi.MakeDataFromXml(SQLite_Android.GetConnection ());
+			var t=BDiemThi.MakeDataFromXml(SQLite_Android.GetConnection ());
 			List<DiemThi> list = new List<DiemThi>();
 			list = BDiemThi.getAll(SQLite_Android.GetConnection ());
 //
@@ -45,6 +46,7 @@ namespace School.Droid
 
 			return rootView;
 		}
+
 
 	}
 }
