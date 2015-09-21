@@ -31,20 +31,21 @@ public final class R {
     }
     public static final class id {
         public static final int btDangNhap=0x7f08003a;
-        public static final int content_frame=0x7f080042;
-        public static final int drawer_layout=0x7f080041;
-        public static final int left_drawer=0x7f080043;
+        public static final int content_frame=0x7f080043;
+        public static final int drawer_layout=0x7f080042;
+        public static final int errorMSG=0x7f08003b;
+        public static final int left_drawer=0x7f080044;
         public static final int linear1=0x7f080036;
         public static final int linear10=0x7f080011;
         public static final int linear11=0x7f080001;
-        public static final int linear2=0x7f08003b;
+        public static final int linear2=0x7f08003c;
         public static final int linear45=0x7f080009;
         public static final int linear6=0x7f080018;
         public static final int linearHP=0x7f08000f;
         public static final int linearLH=0x7f08001e;
         public static final int linearThu=0x7f080033;
         public static final int linearTiet=0x7f080025;
-        public static final int linearTime=0x7f08003d;
+        public static final int linearTime=0x7f08003e;
         public static final int listDT=0x7f080002;
         public static final int listHP=0x7f080012;
         public static final int listLH=0x7f080024;
@@ -67,7 +68,7 @@ public final class R {
         public static final int txtDRL=0x7f080007;
         public static final int txtDT=0x7f08000d;
         public static final int txtDTK=0x7f08000e;
-        public static final int txtGioBD=0x7f08003f;
+        public static final int txtGioBD=0x7f080040;
         public static final int txtHeaderDT=0x7f080008;
         public static final int txtHocKy=0x7f080035;
         public static final int txtHocKyDT=0x7f080000;
@@ -75,12 +76,12 @@ public final class R {
         public static final int txtHocKyLH=0x7f08001d;
         public static final int txtHocPhi=0x7f08001a;
         public static final int txtMienGiam=0x7f08001b;
-        public static final int txtMonHoc=0x7f08003c;
+        public static final int txtMonHoc=0x7f08003d;
         public static final int txtMonHocDT=0x7f08000a;
         public static final int txtMonHocHP=0x7f080019;
         public static final int txtMonHoc_HK=0x7f08001f;
         public static final int txtPhaiDong=0x7f08001c;
-        public static final int txtPhongThi=0x7f080040;
+        public static final int txtPhongThi=0x7f080041;
         public static final int txtPhong_HK=0x7f080023;
         public static final int txtSoTiet_HK=0x7f080022;
         public static final int txtTB10=0x7f080003;
@@ -92,7 +93,7 @@ public final class R {
         public static final int txtTSTC=0x7f080013;
         public static final int txtTSTHP=0x7f080014;
         public static final int txtTTLD=0x7f080015;
-        public static final int txtThoiGian=0x7f08003e;
+        public static final int txtThoiGian=0x7f08003f;
         public static final int txtThu_HK=0x7f080020;
         public static final int txtTiLe=0x7f08000b;
         public static final int txtTietBD_HK=0x7f080021;

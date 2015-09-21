@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using SQLite;
+using System.Net.Http;
 
 namespace School.Core
 {
@@ -26,6 +27,24 @@ namespace School.Core
 				return dtb.AddUser (user);
 			}
 			return 0;
+		}
+
+
+
+
+		public static async Task<bool> CheckAuth(string id, string pass,SQLiteConnection connection)
+		{
+			var httpClient = new HttpClient ();
+			Task<string> contentsTask = httpClient.GetStringAsync ("http://www.schoolapi.somee.com/dangnhap/"+id+"/"+pass);
+			string contents =  await contentsTask;
+			if (contents.Contains("false"))
+
+				return false;
+			User usr = new User ();
+			usr.Password = pass;
+			usr.Id = id;
+			int i = AddUser (connection, usr);
+			return true;
 		}
 	}
 }

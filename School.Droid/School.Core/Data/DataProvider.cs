@@ -232,7 +232,12 @@ namespace School.Core
 			_connection.Commit();
 			return i;
 		}
-
+		public int UpdateMH(MonHoc mh)
+		{
+			int i = _connection.Update (mh);
+			_connection.Commit();
+			return i;
+		}
 
 		public int DeleteAll()
 		{

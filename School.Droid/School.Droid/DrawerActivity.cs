@@ -15,7 +15,7 @@ using Android.Content.Res;
 
 namespace School.Droid
 {
-	[Activity (Label = "School App", MainLauncher = true)]			
+	[Activity (Label = "School App")]			
 	public class DrawerActivity : Activity
 	{
 		private DrawerLayout _drawer;

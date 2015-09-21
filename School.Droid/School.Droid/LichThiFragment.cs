@@ -29,7 +29,8 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-            List<LichThi> list = BLichThi.MakeDataFromXml(GetXmlFromSV(), SQLite_Android.GetConnection());
+			BLichThi.MakeDataFromXml( SQLite_Android.GetConnection());
+			List<LichThi> list = BLichThi.getAll (SQLite_Android.GetConnection ());
   
 			var rootView = inflater.Inflate(Resource.Layout.LichThi, container, false);
 		
@@ -48,12 +49,7 @@ namespace School.Droid
 		}
 
 
-		private string GetXmlFromSV()
-		{
-			XmlDocument doc = new XmlDocument ();
-			doc.Load ("http://www.schoolapi.somee.com/api/lichthi/3112410012");
-			return doc.InnerXml;
-		}
+
 	}
 }
 

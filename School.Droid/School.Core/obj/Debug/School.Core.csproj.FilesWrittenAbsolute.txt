@@ -17,3 +17,6 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Requests.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.NetworkInformation.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Text.RegularExpressions.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.Primitives.dll
+/Users/mactien/School-App-Mobile/School.Droid/School.Core/bin/Debug/System.Net.Http.Extensions.dll

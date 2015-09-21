@@ -7,6 +7,8 @@ using System.Net;
 using System.Xml.Linq;
 using System.Linq;
 using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace School.Core
 {
@@ -27,10 +29,14 @@ namespace School.Core
 				dtb.AddLT (lt);
 			}
 		}
-		public static List<LichThi> MakeDataFromXml(string xml,SQLiteConnection connection)
+		public static async Task<List<LichThi>> MakeDataFromXml(SQLiteConnection connection)
 		{
 			list = new List<LichThi> ();
-			XDocument doc = XDocument.Parse (xml);
+			var httpClient = new HttpClient ();
+			Task<string> contentsTask = httpClient.GetStringAsync("http://www.schoolapi.somee.com/api/lichthi/3111410094");
+			string contents = await contentsTask;
+			XDocument doc = XDocument.Parse (contents);
+
 			//get lichthi 
 			IEnumerable<XElement> childList =
 				from el in doc.Root.Elements()

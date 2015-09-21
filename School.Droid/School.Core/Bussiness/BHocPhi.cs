@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using SQLite;
+using System.Net.Http;
 
 namespace School.Core
 {
@@ -50,10 +51,12 @@ namespace School.Core
 			DataProvider dtb = new DataProvider (connection);
 			return dtb.GetHP (namhoc,hocky);
 		}
-		public static HocPhi MakeDataFromXml(string xml,SQLiteConnection connection)
+		public static async Task<HocPhi> MakeDataFromXml(SQLiteConnection connection)
 		{
-			
-			XDocument doc = XDocument.Parse (xml);
+			var httpClient = new HttpClient ();
+			Task<string> contentsTask = httpClient.GetStringAsync("http://www.schoolapi.somee.com/api/hocphi/3111410089/secret01");
+			string contents = await contentsTask;
+			XDocument doc = XDocument.Parse (contents);
 			 
 
 

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using SQLite;
+using System.Net.Http;
+
+
 namespace School.Core
 {
 	public class BDiemThi
@@ -43,11 +46,14 @@ namespace School.Core
 				DataProvider dtb = new DataProvider (connection);
 				return dtb.GetDMs (hocky, namhoc);
 			}
-			public static List<DiemThi> MakeDataFromXml(string xml,SQLiteConnection connection)
+		public static async Task<List<DiemThi>> MakeDataFromXml(SQLiteConnection connection)
 			{
 				list = new List<DiemThi> ();
 
-			XDocument doc = XDocument.Parse (xml);
+			var httpClient = new HttpClient ();
+			Task<string> contentsTask = httpClient.GetStringAsync("http://www.schoolapi.somee.com/api/diemthi/3111410094");
+			string contents = await contentsTask;
+			XDocument doc = XDocument.Parse (contents);
 			//get lichthi 
 			IEnumerable<XElement> childList =
 				from el in doc.Root.Elements ()
@@ -77,7 +83,7 @@ namespace School.Core
 
 					AddDM(dm,connection);
 					BMonHoc.Add (connection, mh);
-
+					BMonHoc.UpdateMH(connection,mh);
 				}
 				lt.DiemTB4 = node.Elements().ElementAt(1).Value.Trim();
 				lt.DiemTB10 = node.Elements().ElementAt(2).Value.Trim();
