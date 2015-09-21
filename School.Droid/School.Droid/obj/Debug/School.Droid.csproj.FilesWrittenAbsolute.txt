@@ -1,4 +1,4 @@
-/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/MonoAndroid,Version=v4.1.AssemblyAttribute.cs
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/School.Droid.dll.mdb
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/School.Droid.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/com.companyname.school.apk
@@ -33,6 +33,9 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lichhoc.xml
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lichhocrow.xml
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lichhocheader.xml
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/dtfooter.xml
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lhtuanrow.xml
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lhtuanheader.xml
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/R.cs.flag
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/com.companyname.school-Signed.apk
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/uploadflags.txt
@@ -47,5 +50,3 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/SQLite-net.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/School.Core.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/School.Core.dll.mdb
-/Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/System.Net.Requests.dll
-/Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/System.Net.Primitives.dll

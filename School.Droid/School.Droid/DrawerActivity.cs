@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V4.Widget;
 using Android.Content.Res;
+using School.Core;
 
 namespace School.Droid
 {
@@ -76,8 +77,8 @@ namespace School.Droid
 			if (null == savedInstanceState)
 				SelectItem(0);
 
-
-		
+			BHocPhi.MakeDataFromXml (SQLite_Android.GetConnection ());
+			BDiemThi.MakeDataFromXml (SQLite_Android.GetConnection ());
 		}
 
 		private void SelectItem(int position)

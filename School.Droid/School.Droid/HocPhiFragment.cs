@@ -32,8 +32,9 @@ namespace School.Droid
 
 			var rootView = inflater.Inflate(Resource.Layout.HocPhi, container, false);
 
+			BHocPhi.MakeDataFromXml(SQLite_Android.GetConnection ());
 
-			HocPhi hp = BHocPhi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+			HocPhi hp = BHocPhi.getAll(SQLite_Android.GetConnection ())[0];
 			List<CTHocPhi> listCT = BHocPhi.GetCTHP (SQLite_Android.GetConnection (), hp.NamHoc, hp.HocKy);
 			ListView listView = rootView.FindViewById<ListView>(Resource.Id.listHP);
 			HocPhiAdapter adapter = new HocPhiAdapter(Activity, listCT);
@@ -47,12 +48,7 @@ namespace School.Droid
 
 			return rootView;
 		}
-		private string GetXmlFromSV()
-		{
-			XmlDocument doc = new XmlDocument ();
-			doc.Load ("http://www.schoolapi.somee.com/api/hocphi/3111410089/secret01");
-			return doc.InnerXml;
-		}
+
 	}
 }
 

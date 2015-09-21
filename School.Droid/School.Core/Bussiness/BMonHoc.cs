@@ -27,6 +27,21 @@ namespace School.Core
 			}
 			return 0;
 		}
+		public static int UpdateMH(SQLiteConnection connection,MonHoc mh)
+		{
+			try
+			{
+				
+				DataProvider dtb = new DataProvider (connection);
+				return dtb.UpdateMH(mh);
+
+			}
+			catch
+			{
+				return 0;
+			}
+
+		}
 	}
 }
 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using SQLite;
+using System.Net.Http;
 
 namespace School.Core
 {
@@ -63,10 +64,13 @@ namespace School.Core
 			return dtb.GetCTLH (id);
 		}
 
-		public static List<LichHoc> MakeDataFromXml (string xml, SQLiteConnection connection)
+		public static async Task<List<LichHoc>> MakeDataFromXml (SQLiteConnection connection)
 		{
 			list = new List<LichHoc> ();
-			XDocument doc = XDocument.Parse (xml);
+			var httpClient = new HttpClient ();
+			Task<string> contentsTask = httpClient.GetStringAsync("http://www.schoolapi.somee.com/api/thoikhoabieu/3111410094");
+			string contents = await contentsTask;
+			XDocument doc = XDocument.Parse (contents);
 			//get lichthi 
 			IEnumerable<XElement> childList =
 				from el in doc.Root.Elements ()
@@ -75,7 +79,8 @@ namespace School.Core
 			int k = GetId (connection);
 			string maMon = "";
 			foreach (XElement node in childList) {
-				
+
+
 				if (maMon.Equals (node.Elements ().ElementAt (2).Value.Trim ())) {
 					chiTietLH ct = new chiTietLH ();
 					ct.Id = k.ToString ();

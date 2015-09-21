@@ -80,6 +80,7 @@
     <Compile Include="HocPhiAdapter.cs" />
     <Compile Include="LichHocHKAdapter.cs" />
     <Compile Include="LichHocTuanAdapter.cs" />
+    <Compile Include="LoginActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

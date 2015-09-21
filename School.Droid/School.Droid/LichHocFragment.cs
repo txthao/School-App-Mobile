@@ -34,12 +34,15 @@ namespace School.Droid
 			var rootView = inflater.Inflate(Resource.Layout.LichHoc, container, false);
 			ListView listView = rootView.FindViewById<ListView>(Resource.Id.listLH);
 
-			List<LichHoc> listLH = BLichHoc.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+			var t= BLichHoc.MakeDataFromXml(SQLite_Android.GetConnection ());
+			List<LichHoc> listLH = BLichHoc.GetAll (SQLite_Android.GetConnection ());
 			List<chiTietLH> listCT = new List<chiTietLH> ();
 			foreach (var item in listLH) {
 				listCT.AddRange(BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id));
 
 			}
+	
+
 			LichHocHKAdapter adapter = new LichHocHKAdapter (Activity, listCT);
 			listView.Adapter  = adapter;
 
@@ -53,12 +56,7 @@ namespace School.Droid
 
 			return rootView;
 		}
-		private string GetXmlFromSV()
-		{
-			XmlDocument doc = new XmlDocument ();
-			doc.Load ("http://www.schoolapi.somee.com/api/thoikhoabieu/3111410094");
-			return doc.InnerXml;
-		}
+
 	}
 }
 

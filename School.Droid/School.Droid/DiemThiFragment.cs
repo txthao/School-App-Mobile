@@ -29,10 +29,11 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			var rootView = inflater.Inflate(Resource.Layout.DiemThi, container, false);
 
+			var rootView = inflater.Inflate(Resource.Layout.DiemThi, container, false);
+			var t=BDiemThi.MakeDataFromXml(SQLite_Android.GetConnection ());
 			List<DiemThi> list = new List<DiemThi>();
-				list = BDiemThi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
+			list = BDiemThi.getAll(SQLite_Android.GetConnection ());
 //
 //			List<User> l = new List<User> ();
 //			System.Diagnostics.Debug.WriteLine("size: " + list.Count);
@@ -45,12 +46,8 @@ namespace School.Droid
 
 			return rootView;
 		}
-		private string GetXmlFromSV()
-		{
-			XmlDocument doc = new XmlDocument ();
-			doc.Load ("http://www.schoolapi.somee.com/api/diemthi/3111410094");
-			return doc.InnerXml;
-		}
+
+
 	}
 }
 
