@@ -15,15 +15,71 @@
             android:textColor="@android:color/background_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25dip"
+            android:textSize="24dip"
             android:id="@+id/txtHocKyDT"
             android:layout_marginTop="50px" />
-        <ListView
+        <LinearLayout
+            android:id="@+id/linear11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="20px"
+            style="@style/RowHeader">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Môn Học"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                style="@style/RowHeader" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="Tỉ lệ"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                style="@style/RowHeader" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="Điểm KT"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                style="@style/RowHeader" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="Điểm Thi"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                style="@style/RowHeader" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="Điểm TK"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                style="@style/RowHeader" />
+        </LinearLayout>
+        <ExpandableListView
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20px"
-            android:id="@+id/listDT" />
+            android:layout_margin="10px"
+            android:id="@+id/listDT"
+            android:groupIndicator="@null"
+            android:layout_above="@id/linear11" />
     </LinearLayout>
 </RelativeLayout>

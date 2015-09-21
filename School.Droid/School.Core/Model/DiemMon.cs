@@ -59,5 +59,6 @@ namespace School.Core
             get { return namhoc; }
             set { namhoc = value; }
         }
+
     }
 }

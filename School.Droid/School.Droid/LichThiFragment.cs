@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using  static Android.Widget.Adapter;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -30,16 +29,19 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			BLichThi.MakeDataFromXml(GetXmlFromSV(),SQLite_Android.GetConnection ());
-
-
+            List<LichThi> list = BLichThi.MakeDataFromXml(GetXmlFromSV(), SQLite_Android.GetConnection());
+  
 			var rootView = inflater.Inflate(Resource.Layout.LichThi, container, false);
 		
 
 			List<User> l = new List<User> ();
-
+            System.Diagnostics.Debug.WriteLine("size: " + list.Count);
 			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
 
+            ListView listView = rootView.FindViewById<ListView>(Resource.Id.listLT);
+            LichThiAdapter adapter = new LichThiAdapter(Activity, list);
+            listView.Adapter = adapter;
+ 
 
 
 			return rootView;

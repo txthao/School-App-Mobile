@@ -83,24 +83,23 @@ namespace School.Droid
 		private void SelectItem(int position)
 		{
 			var fragment=new Fragment();
-			switch (position) {
-			case 0:
-				fragment = new LichHocFragment ();
-				break;
-			case 1:
-				fragment = new LichThiFragment ();
-				break;
-			case 2:
-				fragment = new DiemThiFragment ();
-				break;
-			case 3:
-				fragment = new HocPhiFragment ();
-				break;
-			default:
-				fragment = new LichThiFragment ();
-				break;
-			}
-
+            switch (position) {
+            case 0:
+                fragment = new LichHocFragment ();
+                break;
+            case 1:
+                fragment = new LichThiFragment ();
+                break;
+            case 2:
+                fragment = new DiemThiFragment ();
+                break;
+            case 3:
+                fragment = new HocPhiFragment ();
+                break;
+            default:
+                fragment = new LichThiFragment ();
+                break;
+            }
 
 			FragmentManager.BeginTransaction()
 				.Replace(Resource.Id.content_frame, fragment)

@@ -31,12 +31,12 @@ namespace School.Core
             set { soTC = value; }
         }
       
-        int tileThi;
+        int tiLeThi;
 
-        public int TileThi
+        public int TiLeThi
         {
-            get { return tileThi; }
-            set { tileThi = value; }
+			get { return tiLeThi; }
+			set { tiLeThi = value; }
         }
 
     }
