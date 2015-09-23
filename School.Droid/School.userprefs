@@ -1,28 +1,19 @@
-﻿<Properties StartupItem="School.Droid/School.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.AVD_for_Galaxy_Nexus_by_Google" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="School.Droid/DiemThiFragment.cs">
+﻿<Properties StartupItem="School.Droid\School.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.avd1" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="School.Droid/DiemThiFragment.cs" Line="29" Column="4" />
-      <File FileName="School.Core/Bussiness/BDiemThi.cs" Line="67" Column="1" />
-      <File FileName="School.Core/Bussiness/BLichHoc.cs" Line="72" Column="1" />
-      <File FileName="School.Droid/SQLite_Android.cs" Line="14" Column="36" />
+      <File FileName="School.Droid\LichHocFragment.cs" Line="47" Column="23" />
+      <File FileName="School.Core\Model\LichHoc.cs" Line="48" Column="3" />
+      <File FileName="School.Droid\LichHocTuanAdapter.cs" Line="52" Column="29" />
+      <File FileName="School.Core\Bussiness\BLichHoc.cs" Line="110" Column="6" />
+      <File FileName="School.Droid\LichThiFragment.cs" Line="45" Column="2" />
+      <File FileName="School.Droid\Resources\values\styles.xml" Line="19" Column="7" />
+      <File FileName="School.Droid\DiemThiApdater.cs" Line="39" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/mactien/Projects/School.Droid/School.Core/Bussiness/BLichThi.cs" line="31" column="1" />
-      <Breakpoint file="/Users/mactien/Projects/School.Droid/School.Droid/SQLite_Android.cs" line="20" column="1" />
-      <Breakpoint file="/Users/mactien/Projects/School.Droid/School.Core/Data/DataProvider.cs" line="24" column="1" />
-      <Breakpoint file="/Users/mactien/School-App/SchoolApp/BDiemThi.cs" line="93" column="1" />
-      <Breakpoint file="/Users/mactien/School-App/SchoolApp/BDiemThi.cs" line="20" column="1" />
-      <Breakpoint file="/Users/mactien/School-App/SchoolApp/BDiemThi.cs" line="138" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BUser.cs" line="47" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BLichThi.cs" line="64" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BLichThi.cs" line="37" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BLichThi.cs" line="38" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BHocPhi.cs" line="87" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BHocPhi.cs" line="58" column="1" />
-      <Breakpoint file="/Users/mactien/School-App-Mobile/School.Droid/School.Core/Bussiness/BHocPhi.cs" line="59" column="1" />
+      <Breakpoint enabled="false" file="G:\Xay dung phan mem\School-App-Mobile\School.Droid\School.Core\Bussiness\BLichHoc.cs" line="76" column="9" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

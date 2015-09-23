@@ -120,12 +120,14 @@
     <AndroidResource Include="Resources\drawable-hdpi\action_search.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\layout\LTHeader.axml" />
-    <AndroidResource Include="Resources\layout\LichHoc.axml" />
     <AndroidResource Include="Resources\layout\LichHocRow.axml" />
     <AndroidResource Include="Resources\layout\LichHocHeader.axml" />
     <AndroidResource Include="Resources\layout\DTFooter.xml" />
     <AndroidResource Include="Resources\layout\LHTuanRow.xml" />
     <AndroidResource Include="Resources\layout\LHTuanHeader.xml" />
+    <AndroidResource Include="Resources\layout\LichHoc_HK.axml" />
+    <AndroidResource Include="Resources\layout\LichHoc_Tuan.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Calendar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

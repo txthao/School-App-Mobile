@@ -51,5 +51,27 @@ namespace School.Core
             set { cBGD = value; }
         }
 
+		string thoigianBD;
+
+		public string ThoigianBD
+		{
+			get { return thoigianBD; }
+			set { thoigianBD = value; }
+		}
+		string thoigianKT;
+
+		public string ThoigianKT
+		{
+			get { return thoigianKT; }
+			set { thoigianKT = value; }
+		}
+
+		string tuan;
+		public string Tuan
+		{
+			get { return tuan; }
+			set { tuan = value; }
+		}
+
     }
 }
