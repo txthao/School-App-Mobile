@@ -18,6 +18,8 @@ namespace School.Droid
 {
 	public class LichHocFragment : Fragment
 	{
+		ExpandableListView listView;
+		ProgressBar progress;
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -49,18 +51,13 @@ namespace School.Droid
 
 			//Theo Tuan
 			var rootView = inflater.Inflate(Resource.Layout.LichHoc_Tuan, container, false);
-			var t= BLichHoc.MakeDataFromXml(SQLite_Android.GetConnection ());
+			listView = rootView.FindViewById<ExpandableListView>(Resource.Id.listLH_Tuan);
+			progress=rootView.FindViewById<ProgressBar>(Resource.Id.progressLHTuan);
 
-			List<LichHoc> listLH = BLichHoc.GetAll(SQLite_Android.GetConnection ());
-			List<chiTietLH> listCT = new List<chiTietLH> ();
-			foreach (var item in listLH) {
-				//List<chiTietLH> list = BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id).ToList();
-				listCT.Add(BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id).First());
 
-			}
-	
-			var listView = rootView.FindViewById<ExpandableListView>(Resource.Id.listLH_Tuan);
-			listView.SetAdapter (new LichHocTuanAdapter(Activity, listCT)); 
+			LoadData ();
+
+		
 			return rootView;
 		}
 
@@ -80,6 +77,24 @@ namespace School.Droid
 			return checkDate >= startDateOfWeek && checkDate <= endDateOfWeek;
 		}
 
+		async void LoadData()
+		{
+			progress.Visibility = ViewStates.Visible;
+			progress.Indeterminate = true;
+			List<LichHoc> list = new List<LichHoc>();
+			var t=await BLichHoc.MakeDataFromXml(SQLite_Android.GetConnection ());
+
+			list = BLichHoc.GetAll (SQLite_Android.GetConnection ());
+			List<chiTietLH> listCT = new List<chiTietLH> ();
+			foreach (var item in list) {
+				//List<chiTietLH> list = BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id).ToList();
+				listCT.Add(BLichHoc.GetCTLH (SQLite_Android.GetConnection (), item.Id).First());
+
+			}
+			listView.SetAdapter (new LichHocTuanAdapter(Activity, listCT)); 
+			progress.Indeterminate = false;
+			progress.Visibility = ViewStates.Gone;
+		}
 
 	}
 }

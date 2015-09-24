@@ -72,6 +72,10 @@
                 android:paddingBottom="5dp"
                 style="@style/RowHeader" />
         </LinearLayout>
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressDT" />
         <ExpandableListView
             android:minWidth="25px"
             android:minHeight="25px"

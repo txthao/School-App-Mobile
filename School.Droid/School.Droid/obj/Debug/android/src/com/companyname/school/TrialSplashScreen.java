@@ -32,7 +32,7 @@ public class TrialSplashScreen extends Activity {
 			public void run ()
 			{
 				finish ();
-				Intent intent = new Intent (TrialSplashScreen.this, md57f5688a386234212827f14cda194d215.DrawerActivity.class);
+				Intent intent = new Intent (TrialSplashScreen.this, md57f5688a386234212827f14cda194d215.Main.class);
 				intent.setFlags (Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity (intent);
 			}

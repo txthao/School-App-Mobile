@@ -50,3 +50,7 @@
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/SQLite-net.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/School.Core.dll
 /Users/mactien/School-App-Mobile/School.Droid/School.Droid/bin/Debug/School.Core.dll.mdb
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lichhoc_hk.xml
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/lichhoc_tuan.xml
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/layout/menu.xml
+/Users/mactien/School-App-Mobile/School.Droid/School.Droid/obj/Debug/res/drawable-hdpi/sgu1.pdf

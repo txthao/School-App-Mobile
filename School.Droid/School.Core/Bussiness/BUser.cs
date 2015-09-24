@@ -28,7 +28,13 @@ namespace School.Core
 			}
 			return 0;
 		}
-
+		public static bool IsLogined(SQLiteConnection connection)
+		{
+			DataProvider dtb = new DataProvider (connection);
+			if (dtb.GetMainUser () != null)
+				return true;
+			return false;
+		}
 
 
 
