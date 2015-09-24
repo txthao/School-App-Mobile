@@ -183,6 +183,18 @@ namespace School.Core
 
 			return query.FirstOrDefault ();
 		}
+
+		public User GetMainUser()
+		{
+			var query = from c in _connection.Table<User>()
+					where c.Password!=null
+				select c;
+
+			return query.FirstOrDefault ();
+		}
+
+
+
 		public CTHocPhi GetCTHP(int namhoc, int hocky)
 		{
 			var query = from c in _connection.Table<CTHocPhi>()

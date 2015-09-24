@@ -16,7 +16,7 @@ using School.Core;
 
 namespace School.Droid
 {
-	[Activity (Label = "School App", MainLauncher = true)]			
+	[Activity (Label = "School App")]			
 	public class DrawerActivity : Activity
 	{
 		private DrawerLayout _drawer;
@@ -32,7 +32,7 @@ namespace School.Droid
 			base.OnCreate(savedInstanceState);
 
 			// Set our view from the "main" layout resource
-			SetContentView(Resource.Layout.Main);
+			SetContentView(Resource.Layout.Menu);
 
 			_title = _drawerTitle = Title;
 			_menuTitles = Resources.GetStringArray(Resource.Array.MenuArray);
@@ -77,8 +77,7 @@ namespace School.Droid
 			if (null == savedInstanceState)
 				SelectItem(0);
 
-			BHocPhi.MakeDataFromXml (SQLite_Android.GetConnection ());
-			BDiemThi.MakeDataFromXml (SQLite_Android.GetConnection ());
+
 		}
 
 		private void SelectItem(int position)

@@ -58,6 +58,10 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp" />
         </LinearLayout>
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressLT" />
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"

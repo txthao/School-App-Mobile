@@ -18,6 +18,8 @@ namespace School.Droid
 {
 	public class DiemThiFragment : Fragment
 	{
+		ExpandableListView listView;
+		ProgressBar progress;
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -30,23 +32,30 @@ namespace School.Droid
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
+
 			var rootView = inflater.Inflate(Resource.Layout.DiemThi, container, false);
-			var t=BDiemThi.MakeDataFromXml(SQLite_Android.GetConnection ());
-			List<DiemThi> list = new List<DiemThi>();
-			list = BDiemThi.getAll(SQLite_Android.GetConnection ());
-//
-//			List<User> l = new List<User> ();
-//			System.Diagnostics.Debug.WriteLine("size: " + list.Count);
-//			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
+			listView = rootView.FindViewById<ExpandableListView>(Resource.Id.listDT);
+			progress=rootView.FindViewById<ProgressBar>(Resource.Id.progressDT);
+			//			List<User> l = new List<User> ();
+			//			System.Diagnostics.Debug.WriteLine("size: " + list.Count);
+			//			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
 
-
-			var listView = rootView.FindViewById<ExpandableListView>(Resource.Id.listDT);
-			//DiemThiApdater adapter = new DiemThiApdater(Activity, list);
-			listView.SetAdapter (new DiemThiApdater(Activity, list)); 
+			LoadData ();
 
 			return rootView;
 		}
+		async void LoadData()
+		{
+			progress.Visibility = ViewStates.Visible;
+			progress.Indeterminate = true;
+			List<DiemThi> list = new List<DiemThi>();
+			var t=await BDiemThi.MakeDataFromXml(SQLite_Android.GetConnection ());
 
+			list = BDiemThi.getAll(SQLite_Android.GetConnection ());
+			listView.SetAdapter (new DiemThiApdater(Activity, list)); 
+			progress.Indeterminate = false;
+			progress.Visibility = ViewStates.Gone;
+		}
 
 	}
 }

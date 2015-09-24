@@ -18,6 +18,9 @@ namespace School.Droid
 {
 	public class HocPhiFragment : Fragment
 	{
+		ListView listView;
+		ProgressBar progress;
+		View rootView;
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -30,13 +33,26 @@ namespace School.Droid
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
-			var rootView = inflater.Inflate(Resource.Layout.HocPhi, container, false);
+			 rootView = inflater.Inflate(Resource.Layout.HocPhi, container, false);
 
-			BHocPhi.MakeDataFromXml(SQLite_Android.GetConnection ());
+		
+
+			progress=rootView.FindViewById<ProgressBar>(Resource.Id.progressHP);
+			listView = rootView.FindViewById<ListView>(Resource.Id.listHP);
+
+			LoadData ();
+			return rootView;
+		}
+
+		async void LoadData()
+		{
+			progress.Visibility = ViewStates.Visible;
+			progress.Indeterminate = true;
+
+			var t=await BHocPhi.MakeDataFromXml(SQLite_Android.GetConnection ());
 
 			HocPhi hp = BHocPhi.getAll(SQLite_Android.GetConnection ())[0];
 			List<CTHocPhi> listCT = BHocPhi.GetCTHP (SQLite_Android.GetConnection (), hp.NamHoc, hp.HocKy);
-			ListView listView = rootView.FindViewById<ListView>(Resource.Id.listHP);
 			HocPhiAdapter adapter = new HocPhiAdapter(Activity, listCT);
 
 			listView.Adapter = adapter;
@@ -45,10 +61,9 @@ namespace School.Droid
 			rootView.FindViewById<TextView> (Resource.Id.txtTTLD).Text += hp.TienDongTTLD;
 			rootView.FindViewById<TextView> (Resource.Id.txtTDD).Text += hp.TienDaDong;
 			rootView.FindViewById<TextView> (Resource.Id.txtTCN).Text += hp.TienConNo;
-
-			return rootView;
+			progress.Indeterminate = false;
+			progress.Visibility = ViewStates.Gone;
 		}
-
 	}
 }
 

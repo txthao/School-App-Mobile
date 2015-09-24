@@ -77,13 +77,15 @@ namespace School.Core
 				select el;
 			//get attri lichthi
 			int k = GetId (connection);
-			string maMon = "";
+			DataProvider dtb = new DataProvider (connection);
 			foreach (XElement node in childList) {
+				
+				LichHoc lichhoc = new LichHoc ();
+				lichhoc = dtb.GetLH_Ma (node.Elements ().ElementAt (3).Value.Trim());
 
-
-				if (maMon.Equals (node.Elements ().ElementAt (2).Value.Trim ())) {
+					if (lichhoc!=null) {
 					chiTietLH ct = new chiTietLH ();
-					ct.Id = k.ToString ();
+					ct.Id = lichhoc.Id;
 					ct.CBGD = node.Elements ().ElementAt (0).Value.Trim ();
 					ct.Phong = node.Elements ().ElementAt (6).Value.Trim ();
 					ct.Thu = node.Elements ().ElementAt (11).Value.Trim ();
@@ -122,7 +124,7 @@ namespace School.Core
 					list.Add (lh);
 					AddLH (lh, connection);
 					BMonHoc.Add (connection, mh);
-					maMon = lh.MaMH;
+					
 				}
 
 

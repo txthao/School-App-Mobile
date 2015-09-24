@@ -17,6 +17,8 @@ namespace School.Droid
 {
 	public class LichThiFragment : Fragment
 	{
+		ListView listView;
+		ProgressBar progress;
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -29,25 +31,38 @@ namespace School.Droid
 		{
 			// Use this to return your custom view for this Fragment
 			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-			BLichThi.MakeDataFromXml( SQLite_Android.GetConnection());
-			List<LichThi> list = BLichThi.getAll (SQLite_Android.GetConnection ());
+		
   
 			var rootView = inflater.Inflate(Resource.Layout.LichThi, container, false);
 		
 
-			List<User> l = new List<User> ();
-            System.Diagnostics.Debug.WriteLine("size: " + list.Count);
-			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
 
-            ListView listView = rootView.FindViewById<ListView>(Resource.Id.listLT);
-            LichThiAdapter adapter = new LichThiAdapter(Activity, list);
-            listView.Adapter = adapter;
- 
+            
+
+             listView = rootView.FindViewById<ListView>(Resource.Id.listLT);
+			progress= rootView.FindViewById<ProgressBar>(Resource.Id.progressLT);
+			LoadData ();
 
 
 			return rootView;
 		}
+		async void LoadData()
+		{
+			progress.Visibility = ViewStates.Visible;
+			progress.Indeterminate = true;
+			List<LichThi> list = new List<LichThi>();
+			var t=await BLichThi.MakeDataFromXml( SQLite_Android.GetConnection());
 
+			list = BLichThi.getAll (SQLite_Android.GetConnection ());
+			List<User> l = new List<User> ();
+			System.Diagnostics.Debug.WriteLine("size: " + list.Count);
+			l.Add(BUser.GetUser (SQLite_Android.GetConnection (),"1111"));
+
+			LichThiAdapter adapter = new LichThiAdapter(Activity, list);
+			listView.Adapter = adapter;
+			progress.Indeterminate = false;
+			progress.Visibility = ViewStates.Gone;
+		}
 
 
 	}

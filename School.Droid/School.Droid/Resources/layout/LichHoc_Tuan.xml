@@ -18,6 +18,10 @@
             android:textSize="24dip"
             android:id="@+id/txtHocKyDT"
             android:layout_marginTop="50dp" />
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressLHTuan" />
         <ExpandableListView
             android:minWidth="25px"
             android:minHeight="25px"

@@ -46,6 +46,10 @@ School.Droid.LoginActivity, School.Droid;md57f5688a386234212827f14cda194d215.Log
 School.Droid.LoginActivity, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.LoginActivity
 School.Droid.LoginActivity;md57f5688a386234212827f14cda194d215.LoginActivity
 school.droid.LoginActivity;md57f5688a386234212827f14cda194d215.LoginActivity
+School.Droid.Main, School.Droid;md57f5688a386234212827f14cda194d215.Main
+School.Droid.Main, School.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57f5688a386234212827f14cda194d215.Main
+School.Droid.Main;md57f5688a386234212827f14cda194d215.Main
+school.droid.Main;md57f5688a386234212827f14cda194d215.Main
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
