@@ -36,21 +36,21 @@ namespace School.Core
             get { return maLop; }
             set { maLop = value; }
         }
+
+		string hocKy;
+
+		public string HocKy
+		{
+			get { return hocKy; }
+			set { hocKy = value; }
+		}
+
+		string namHoc;
+		public string NamHoc
+		{
+			get { return namHoc; }
+			set { namHoc = value; }
+		}
        
-      
-        string thoigianBD;
-
-        public string ThoigianBD
-        {
-            get { return thoigianBD; }
-            set { thoigianBD = value; }
-        }
-        string thoigianKT;
-
-        public string ThoigianKT
-        {
-            get { return thoigianKT; }
-            set { thoigianKT = value; }
-        }
     }
 }

@@ -47,11 +47,8 @@ namespace School.Droid
 
 			View row = convertView;
 
-			if (row == null) {
-				row = LayoutInflater.From (context).Inflate (Resource.Layout.DTRow, null);
-			}
 			if (childPosition < GetChildrenCount (groupPosition) - 1) {	
-				
+				row = LayoutInflater.From (context).Inflate (Resource.Layout.DTRow, null);
 				DiemMon diemMon = GetChildViewHelper (groupPosition, childPosition);
 				MonHoc mh = BMonHoc.GetMH (SQLite_Android.GetConnection (), diemMon.MaMH);
 				row.FindViewById<TextView> (Resource.Id.txtMonHocDT).Text = mh.TenMH;
@@ -94,7 +91,7 @@ namespace School.Droid
 
 		public override int GroupCount {
 			get {
-				return 26;
+				return listDT.Count;;
 			}
 		}
 
@@ -141,67 +138,4 @@ namespace School.Droid
 
 		#endregion
 	}
-
-	//		public List<DiemMon> listDM;
-	//		public DiemThi diemThi;
-	//        private Context context;
-	//        public int flag;
-	//
-	//		public DiemThiApdater(Context context,DiemThi diemThi,List<DiemMon> listDM)
-	//        {
-	//			this.listDM = listDM;
-	//			this.diemThi = diemThi;
-	//            this.context = context;
-	//        }
-	//
-	//        public override int Count
-	//        {
-	//            get { return listDT.Count; }
-	//        }
-	//
-	//        public override long GetItemId(int position)
-	//        {
-	//            return position;
-	//        }
-	//
-	//		public override DiemMon this[int position]
-	//        {
-	//            get
-	//            {
-	//				return DiemMon[position];
-	//            }
-	//        }
-	//
-	//        public override View GetView(int position, View convertView, ViewGroup parent)
-	//        {
-	//
-	//            View view = convertView;
-	//            if (view == null)
-	//            {
-	//                view = LayoutInflater.From(context).Inflate(Resource.Layout.DTRow, null, false);
-	//
-	//            }
-	//            //BDiemThi.GetDiemMons listDT[position]
-	//			TextView txtSTT = view.FindViewById<TextView>(Resource.Id.txtSTTDT);
-	//
-	//			txtSTT.Text = (position+1).ToString();
-	//			listDT<DiemMon> listDM = BMonHoc.GetMH(SQLite_Android.GetConnection(), listDT[position].HocKy, listDT[position].NamHoc);
-	//			txtMonHocDT
-	//            //TextView txtMon = view.FindViewById<TextView>(Resource.Id.txtMonHoc);
-	//			txtTiLe
-	//			txtDKT
-	//			txtDT
-	//			txtDTK
-	//            //txtMon.Text = BMonHoc.GetMH(SQLite_Android.GetConnection(), listDT[position].MaMH).TenMH;
-	//            //TextView txtThoiGian = view.FindViewById<TextView>(Resource.Id.txtThoiGian);
-	//            //txtThoiGian.Text = listDT[position].NgayThi;
-	//            //TextView txtGioBD = view.FindViewById<TextView>(Resource.Id.txtGioBD);
-	//            //txtGioBD.Text = listDT[position].GioBD;
-	//            //TextView txtPhong = view.FindViewById<TextView>(Resource.Id.txtPhongThi);
-	//            //txtPhong.Text = listDT[position].PhongThi;
-	//
-	//            return view;
-	//        }
-	//
-	//    }
 }

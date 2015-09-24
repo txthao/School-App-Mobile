@@ -51,6 +51,7 @@ G:\Xay dung phan mem\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\l
 G:\Xay dung phan mem\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lichhocheader.xml
 G:\Xay dung phan mem\School-App-Mobile\School.Droid\School.Droid\obj\Debug\R.cs.flag
 G:\Xay dung phan mem\School-App-Mobile\School.Droid\School.Droid\obj\Debug\uploadflags.txt
+G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\School.Droid.csprojResolveAssemblyReference.cache
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debug\School.Droid.dll
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debug\School.Droid.pdb
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debug\com.companyname.school.apk
@@ -68,7 +69,6 @@ G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debu
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debug\Xamarin.Forms.Core.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\bin\Debug\SQLite-net.dll.mdb
-G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\School.Droid.csprojResolveAssemblyReference.cache
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\School.Droid.dll
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\School.Droid.pdb
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\android\bin\com.companyname.school.apk
@@ -99,11 +99,13 @@ G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debu
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\drawable-hdpi\action_search.png
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\values\styles.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\ltheader.xml
-G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lichhoc.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lichhocrow.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lichhocheader.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\dtfooter.xml
-G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\R.cs.flag
-G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\uploadflags.txt
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lhtuanrow.xml
 G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lhtuanheader.xml
+G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lichhoc_hk.xml
+G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\layout\lichhoc_tuan.xml
+G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\R.cs.flag
+G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\uploadflags.txt
+G:\Xay dung phan mem\Mobile\School-App-Mobile\School.Droid\School.Droid\obj\Debug\res\drawable-hdpi\calendar.jpg

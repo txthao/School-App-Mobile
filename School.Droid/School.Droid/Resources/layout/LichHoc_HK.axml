@@ -83,5 +83,13 @@
             android:layout_margin="10px"
             android:id="@+id/listLH"
             android:layout_above="@id/txtHocKyLH" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:id="@+id/listLH"
+            android:layout_above="@id/txtHocKyLH" />
     </LinearLayout>
 </RelativeLayout>
